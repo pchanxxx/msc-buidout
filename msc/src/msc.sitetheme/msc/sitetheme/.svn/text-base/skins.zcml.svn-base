@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="msc.sitetheme">
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="msc_sitetheme_custom_images"/>
+  <cmf:registerDirectory name="msc_sitetheme_custom_templates"/>
+  <cmf:registerDirectory name="msc_sitetheme_styles"/>
+
+</configure>

@@ -1,0 +1,14 @@
+setuptools
+zope.component
+zope.interface
+zope.app.publisher
+Products.CMFCore
+Products.GenericSetup
+Acquisition
+ExtensionClass
+Zope2
+
+[test]
+plone.app.contentmenu
+zope.publisher
+Products.CMFTestCase

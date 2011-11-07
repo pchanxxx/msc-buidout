@@ -1,0 +1,11 @@
+setuptools
+z3c.form
+zope.app.form
+zope.interface
+zope.schema
+zope.component
+zope.i18nmessageid
+
+[test]
+zope.app.testing
+zope.testing

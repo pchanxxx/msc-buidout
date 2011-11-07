@@ -1,0 +1,14 @@
+#!/Users/anjaradtke/vw-devel/msc/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/mr.developer-1.18-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/argparse-1.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zc.buildout-1.4.4-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/distribute-0.6.21-py2.6.egg',
+  ]
+
+import mr.developer.develop
+
+if __name__ == '__main__':
+    mr.developer.develop.develop()

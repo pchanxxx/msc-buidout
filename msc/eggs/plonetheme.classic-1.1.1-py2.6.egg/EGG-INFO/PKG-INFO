@@ -1,0 +1,183 @@
+Metadata-Version: 1.0
+Name: plonetheme.classic
+Version: 1.1.1
+Summary: The classic Plone 3 default theme.
+Home-page: http://pypi.python.org/pypi/plonetheme.classic
+Author: Plone Foundation
+Author-email: plone-developers@lists.sourceforge.net
+License: GPL version 2
+Description: Introduction
+        ============
+        
+        This theme implements the look of Plone 3 and earlier in a separate package,
+        and is supplied for backwards compatibility reasons, and for people who prefer
+        the old theme over the new standard one in Plone 4.
+        
+        
+        Changelog
+        =========
+        
+        1.1.1 - 2011-02-13
+        ------------------
+        
+        - Backport http://dev.plone.org/plone/changeset/51221. Pull in plone.app.i18n
+        configuration so that the languageselector template is preserved. Closes
+        http://dev.plone.org/plone/ticket/12007
+        [esteele]
+        
+        - Add MANIFEST.in.
+        [WouterVH]
+        
+        
+        1.1 - 2011-02-04
+        ----------------
+        
+        - Add styling changes from PLIP 11017: Tags MultiSelectionWidget w/scrollbar &
+        checkboxes.
+        [esteele]
+        
+        
+        1.0.1 - 2010-07-18
+        ------------------
+        
+        - Reset the font-size for the body of documents being edited in TinyMCE.
+        Fixes http://dev.plone.org/plone/ticket/10779
+        [davisagli]
+        
+        - Copy CSS from sunburst theme to make sure we still get icons for the file
+        and image types in the add menu. Fixes
+        http://dev.plone.org/plone/ticket/10713
+        [davisagli]
+        
+        - Update license to GPL version 2 only.
+        [hannosch]
+        
+        
+        1.0 - 2010-07-07
+        ----------------
+        
+        - Add CSS for sprite versions of the core content type icons, based on the
+        Sunburst theme. Fixes http://dev.plone.org/plone/ticket/10485
+        [davisagli]
+        
+        
+        1.0b5 - 2010-06-13
+        ------------------
+        
+        - Add ILegacyThemeSpecific interface for use with the "Old Plone 3 Custom
+        Theme" skin which may be added during upgrade from Plone 3, to make sure
+        it gets the right viewlets.
+        [davisagli]
+        
+        - Set overflow-y:auto on ajax overlays to support forms longer than the viewport.
+        [stevem]
+        
+        
+        1.0b4 - 2010-05-01
+        ------------------
+        
+        - Styling tweaks for full item view.
+        [elro]
+        
+        
+        1.0b3 - 2010-04-10
+        ------------------
+        
+        - Removed old mobile.css styling, since it doesn't really do anything useful,
+        and is actively harmful for certain devices. If you want to have mobile
+        styling, we recommend starting with the Sunburst theme as a base instead.
+        [limi]
+        
+        - Adjusted viewlets so that plone.app.layout specifies the viewlet
+        configuration used by Sunburst, and this package now overrides those
+        to restore the old positions.
+        [davisagli]
+        
+        - Fix the uninstall profile to be executed and switch to Sunburst.
+        Fixes http://dev.plone.org/plone/ticket/10346.
+        [dukebody]
+        
+        
+        1.0b2 - 2010-03-05
+        ------------------
+        
+        - Hide the "up to groups overview" link and fieldset border in the "add group"
+        overlay.
+        Closes http://dev.plone.org/plone/ticket/10149
+        Closes http://dev.plone.org/plone/ticket/10150
+        [stuttle]
+        
+        
+        1.0b1 - 2010-02-18
+        ------------------
+        
+        - Updated the CSS to work using only #content, now that .documentContent and
+        #region-content are removed.
+        This refs http://dev.plone.org/plone/ticket/10231
+        [limi]
+        
+        - Remove common CSS registries. Adjust skin layers order.
+        Refs http://dev.plone.org/plone/ticket/9988.
+        [dukebody]
+        
+        - Highlighted current item in actions menu with the font color and boldness.
+        [spliter]
+        
+        
+        1.0a4 - 2010-02-01
+        ------------------
+        
+        - Fix packaging issues.
+        [esteele]
+        
+        
+        1.0a3 - 2010-02-01
+        ------------------
+        
+        - Register iefixes (css and js) in the proper resource registries,
+        using the conditionalcomments property.
+        Refs http://dev.plone.org/plone/ticket/9278.
+        [dukebody]
+        
+        - Move iefixes.js to this package, since we agreed
+        upon that every theme should be responsible of its own fixes for IE.
+        Refs http://dev.plone.org/plone/ticket/9278.
+        [dukebody]
+        
+        - Activate this skin in the Plone site upon installation.
+        Fixes http://dev.plone.org/plone/ticket/10011.
+        [dukebody]
+        
+        - Moved plone.css.py to CMFPlone - it doesn't belong to classic theme.
+        http://dev.plone.org/plone/ticket/9366
+        [spliter]
+        
+        
+        1.0a2 - 2009-11-18
+        ------------------
+        
+        - Fix packaging error
+        [esteele]
+        
+        
+        1.0a1 - 2009-11-18
+        ------------------
+        
+        - Prevent discussion form buttons from displaying in print view. Add byline
+        info for comments in print view.
+        http://dev.plone.org/plone/ticket/8460
+        [naro]
+        
+        - Add CSS support for JQueryTools popup forms
+        [stevem]
+        
+        - Initial release
+        
+Keywords: web zope plone theme
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope2
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

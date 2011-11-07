@@ -1,0 +1,17 @@
+#!/Users/anjaradtke/vw-devel/msc/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/ZopeSkel-2.21.2-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zopeskel.dexterity-1.4-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Paste-1.7.5.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/distribute-0.6.21-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/PasteDeploy-1.3.4-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/PasteScript-1.7.4.2-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Cheetah-2.2.1-py2.6-macosx-10.6-universal.egg',
+  ]
+
+import zopeskel.zopeskel_script
+
+if __name__ == '__main__':
+    zopeskel.zopeskel_script.run()

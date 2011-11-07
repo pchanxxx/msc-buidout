@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:xmlrpc="http://namespaces.zope.org/xmlrpc"
+    >
+
+  <view 
+      for=".IMethodPublisher"
+      type="zope.publisher.interfaces.xmlrpc.IXMLRPCRequest"
+      provides="zope.publisher.interfaces.xmlrpc.IXMLRPCPublisher"
+      factory=".MethodTraverser"
+      permission="zope.Public"
+      />
+
+</configure>

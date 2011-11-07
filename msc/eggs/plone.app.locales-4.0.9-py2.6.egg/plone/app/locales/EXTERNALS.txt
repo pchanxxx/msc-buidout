@@ -1,0 +1,3 @@
+locales -r244663 https://svn.plone.org/svn/collective/PloneTranslations/trunk/locales
+locales-addons -r244663 https://svn.plone.org/svn/collective/PloneTranslations/trunk/locales-addons
+utils -r244663 https://svn.plone.org/svn/collective/PloneTranslations/trunk/utils

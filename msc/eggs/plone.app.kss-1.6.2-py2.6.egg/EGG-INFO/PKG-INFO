@@ -1,0 +1,277 @@
+Metadata-Version: 1.0
+Name: plone.app.kss
+Version: 1.6.2
+Summary: KSS (Kinetic Style Sheets) for Plone
+Home-page: http://pypi.python.org/pypi/plone.app.kss
+Author: Plone Foundation
+Author-email: plone-developers@lists.sourceforge.net
+License: GPL version 2
+Description: plone.app.kss
+        =============
+        
+        Overview
+        --------
+        
+        This product gives generic KSS support for Plone. It depends on the product
+        ``kss.core``.
+        
+        Installation
+        ------------
+        
+        Compatible with Zope 2.12, and Plone 4.0.
+        
+        Features implemented
+        --------------------
+        
+        - Content tab replacer. This works with all the content (aka. "green") tabs
+        including the non-action tabs in the setup screens. (put to experimental
+        rules, by default off)
+        
+        As we have no way to identify a macro for the content-region in the current
+        templating system of Plone, we render down the whole template. As a speedup,
+        we replace the main_template in the rendering context, this may or may not
+        have an effect depending on the template. If we cannot find a template at
+        all, we fall back to submit.
+        
+        - Portlet refresher
+        
+        We currently refresh the "recent" portlet. The rendering of the portlet is
+        done by the general macro renderer, the portlet is then replaced in the
+        client in its position.
+        
+        There is one rule that is refreshing all the portlets, the only change
+        that needs to be done in the Plone templates is put a KssPortletRefresh
+        class to those portlet's outer <dl> tag that need to be refreshed.
+        Refreshing is done in every 30 seconds currently, this can be adjusted
+        from the template.
+        
+        - In-place calendar navigation: the two little arrows replace the calendar
+        portlet, without reloading the screen.
+        
+        We put kss attributes on the calendar node for the year and month
+        to tell the server where to navigate. Actually, we could have done
+        that without modifying the template either, since the server could
+        have just received the original "href" of the little arrow and could
+        parse the year and month from that, but this is a cleaner solution.
+        
+        KSS extensions defined for general purpose use
+        ----------------------------------------------
+        
+        - A generic macro replacer server action
+        
+        - client action for submitting to an url
+        
+        - client action for submitting the current form
+        
+        Changelog
+        =========
+        
+        1.6.2 (2011-01-03)
+        ------------------
+        
+        - Portlet is removed if it have lost its availability
+        during kss action.
+        This refs https://dev.plone.org/plone/ticket/11343
+        [thomasdesvenain]
+        
+        - Review portlet is updated when transition is passed.
+        This refs http://dev.plone.org/plone/ticket/11337
+        [thomasdesvenain]
+        
+        1.6.1 (2010-07-18)
+        ------------------
+        
+        - Update license to GPL version 2 only.
+        [hannosch]
+        
+        1.6.0 (2010-07-01)
+        ------------------
+        
+        - Avoid deprecation warnings under Zope 2.13.
+        [hannosch]
+        
+        - Use a proper API to read response headers in tests.
+        [hannosch]
+        
+        - Avoid using the deprecated five:implements directive.
+        [hannosch]
+        
+        1.6.0a4 (2010-04-28)
+        --------------------
+        
+        - Add RefreshViewletByClass command to ``zopecommands`` command set.
+        This allow to fix event handlers that were broken because they were
+        relying on viewlet (and manager) names
+        instead of relying on their semantic.
+        This refs http://dev.plone.org/plone/ticket/9703
+        [gotcha]
+        
+        1.6.0a3 (2010-04-09)
+        --------------------
+        
+        - Better unicode character for dragging, better cursor.
+        [limi]
+        
+        1.6.0a2 (2010-02-18)
+        --------------------
+        
+        - Changed replace_id in content_replacer.changeViewTemplate and
+        content_replacer.replaceContentRegion to replace#content instead of
+        redundant #region-content that is not in Plone anymore.
+        [spliter]
+        
+        - Updated markup to not use .documentContent.
+        This refs http://dev.plone.org/plone/ticket/10231
+        [limi]
+        
+        1.6.0a1 (2009-11-19)
+        --------------------
+        
+        - Fixed tests (portal-column-content is a div)
+        [gotcha]
+        
+        - Fixed refrehProvider zope command : providers do not need to inherit
+        from Acquisition.Explicit anymore
+        [gotcha]
+        
+        - Removed interface BBB code for old Plone versions.
+        [hannosch]
+        
+        - Specified package dependencies.
+        [hannosch]
+        
+        - Made the tests independent of any default content in the site.
+        [hannosch]
+        
+        - Make the macroContent helper work on Zope 2.12 by
+        using a BoundPageTemplate instead of an acquisition-
+        wrapped ViewPageTemplateFile.
+        [davisagli]
+        
+        1.4.5 (2009-05-11)
+        ------------------
+        
+        - Made kss attribute tests pass on both Plone 3.2 and 3.3.
+        Difference: on 3.3 contentview-history was removed and inline
+        editing has been disabled by default.
+        [maurits]
+        
+        1.4.4 (2009-03-01)
+        ------------------
+        
+        - Correct invalid use of jq.unbind
+        [davisagli]
+        
+        1.4.3 (2008-08-18)
+        ------------------
+        
+        - Translate message and message type passed to
+        PloneCommands.issuePortalMessage.
+        This fixes http://dev.plone.org/plone/ticket/7282
+        [maurits]
+        
+        - Adjusted deprecation warnings to point to Plone 4.0 instead of Plone 3.5
+        since we changed the version numbering again.
+        [hannosch]
+        
+        1.4.2 (2008-07-06)
+        ------------------
+        
+        - Make the plugin tolerant if jQuery is not present,
+        and not have a "jq" reference error in this case.
+        Previously any kss pages (for example, demos) that
+        did not use jQuery, failed with a javascript error
+        in the presense of this plugin.
+        During this, most things seemed to be working,
+        apart from any plugins that were missing because
+        they were to be loaded after the error.
+        [ree]
+        
+        1.4.1 (2008-06-02)
+        ------------------
+        
+        - Made the kss.demo dependency optional.
+        [hannosch]
+        
+        1.4 (2008-04-21)
+        ----------------
+        
+        - add selenium tests that at the moment are only
+        runnable with a special branch of kss.demo,
+        available from ploneout.
+        [ree]
+        
+        - use refreshViewlet instead of macroContent in subscribers
+        (closes #7879)
+        [gotcha)
+        
+        1.2 (2007-08-17)
+        ----------------
+        
+        - Fix bugs and test layer
+        [ree, gotcha, jvloothuis, nouri]
+        
+        1.2-rc2 (2007-07-27)
+        --------------------
+        
+        - External links is not always loaded anymore
+        [gotcha]
+        
+        1.2-rc1.1 (2007-07-12)
+        ----------------------
+        
+        - Prepare for release
+        [ree]
+        
+        1.2-rc1 (2007-07-08)
+        --------------------
+        
+        - Cleaned up Acquisition usage. self.context always needs to be unwrapped
+        by aq_inner before using it in Zope2.
+        [hannosch]
+        
+        1.2-beta2 (2007-04-30)
+        ----------------------
+        
+        - Prepare for release
+        [ree]
+        
+        1.2-beta1.2 (2007-03-23)
+        ------------------------
+        
+        - Add monkeypatch to offer a temporary workaround to
+        five.localsitemanager. This is actually not a kss issue,
+        but the problem manifests when any other non-five site manager
+        (like kss's one) is used together fith five's one. The
+        result is, acquisition wrapping is not added in this case, and
+        tools in Plone are returned without a parent. The current patch
+        relocates the adding of the acquisition wrapping from the
+        localsitemanager of five to the level of zope3. Thus acquisition
+        will always be added.
+        This is actually not a proper solution and is added from the wrong
+        place at the moment.
+        [ree]
+        
+        1.2-beta1 (2007-03-04)
+        ----------------------
+        
+        - prepare for release
+        [ree]
+        
+        1.2-alpha2 (2007-02-10)
+        -----------------------
+        
+        - adjust for release
+        [ree]
+        
+        - Initial package structure.
+        [zopeskel]
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope2
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

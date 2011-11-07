@@ -1,0 +1,16 @@
+setuptools
+ZODB3
+zope.annotation
+zope.app.form
+zope.app.pagetemplate
+zope.component
+zope.componentvocabulary
+zope.interface
+zope.proxy
+zope.publisher
+zope.ramcache
+zope.schema
+zope.traversing
+
+[test]
+zope.app.testing

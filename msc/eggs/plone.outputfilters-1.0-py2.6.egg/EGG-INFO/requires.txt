@@ -1,0 +1,5 @@
+setuptools
+Products.CMFCore
+Products.GenericSetup
+Products.MimetypesRegistry
+Products.PortalTransforms

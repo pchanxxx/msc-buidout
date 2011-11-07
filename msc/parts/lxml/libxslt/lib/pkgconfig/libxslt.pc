@@ -1,0 +1,12 @@
+prefix=/Users/anjaradtke/vw-devel/msc/buildout.blueprint/parts/lxml/libxslt
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+
+Name: libxslt
+Version: 1.1.26
+Description: XSLT library version 2.
+Requires: libxml-2.0
+Libs: -L${libdir} -lxslt  -L/Users/anjaradtke/vw-devel/msc/buildout.blueprint/parts/lxml/libxml2/lib -lxml2 -lz -lpthread -liconv -lm 
+Cflags: -I${includedir}

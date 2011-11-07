@@ -1,0 +1,3 @@
+[zc.buildout]
+default = zc.recipe.cmmi:Recipe
+

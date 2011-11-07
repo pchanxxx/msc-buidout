@@ -1,0 +1,5 @@
+_imaging.so
+_imagingcms.so
+_imagingft.so
+_imagingmath.so
+_imagingtk.so

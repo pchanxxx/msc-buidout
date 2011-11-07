@@ -1,0 +1,88 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+
+/* New navtree styles */
+
+.portletNavigationTree {
+    padding: 0; 
+    list-style: none !important;
+    list-style-image: none !important; 
+    line-height: 1em;
+    border: none;
+}
+.navTree {
+    list-style: none; 
+    list-style-image: none; 
+    margin-top: 1px;
+    border: none;
+}
+.navTree li {
+    margin-bottom: 1px;
+}
+.navTreeItem {
+    display: block;
+    padding: 0;
+    margin: 0;
+    background:transparent;
+}
+
+li.navTreeItem div {
+    background:url(++resource++msc.sitetheme.images/navitem.png) no-repeat 0px 30px transparent;
+}
+
+.navTreeItem a,
+dd.portletItem .navTreeItem a {
+    border: none;
+    display: block;
+    text-decoration: none;
+    padding: 9px 0px 9px 10px;
+    background:transparent !important;
+    color:#565c61;
+}
+.navTreeItem a:hover,
+dd.portletItem .navTreeItem a:hover {
+    background:transparent;
+    color: &dtml-globalFontColor;;
+    border: transparent;
+}
+a.navTreeCurrentItem {
+    background: transparent;
+    color: white !important;
+    border: none;
+    padding: 9px 0px 9px 35px !important;
+}
+
+li.navTreeCurrentNode div {
+    background:url(++resource++msc.sitetheme.images/navitem.png) no-repeat 0px -40px transparent;
+}
+
+li.navTreeCurrentItem {
+    display: block;
+    padding: 0 0 0 1px;
+    margin: 0 0 2px -1px;
+}
+
+li.navTreeCurrentItem a,
+li.navTreeCurrentItem a:hover {
+    display: block;
+    border: none;
+    min-height: 1.6em;
+    line-height: 1.6em;
+    height: auto;
+}
+
+/* Another workaround for broken Internet Explorer */
+* html li.navTreeCurrentItem a,
+* html li.navTreeCurrentItem a:hover {
+    height: 1.6em;
+}
+
+.navTreeLevel0 { margin: 0; }
+.navTreeLevel1 { margin-left: 0em;}
+.navTreeLevel2 { margin-left: 0em; }
+.navTreeLevel3 { margin-left: 0em; }
+.navTreeLevel4 { margin-left: 0em; }
+.navTreeLevel5 { margin-left: 0em; }
+
+/* </dtml-with> */

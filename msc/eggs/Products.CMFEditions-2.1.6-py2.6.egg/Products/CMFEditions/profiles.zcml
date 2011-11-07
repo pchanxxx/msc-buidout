@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="cmfeditions">
+
+  <genericsetup:registerProfile
+      name="CMFEditions"
+      title="CMFEditions"
+      directory="profiles/default"
+      description="Extension profile for default CMFEditions setup."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+    <genericsetup:upgradeSteps
+        source="2.0"
+        destination="3"
+        profile="Products.CMFEditions:CMFEditions">
+
+        <genericsetup:upgradeDepends
+           title="Fix portal_historyidhandler"
+           import_steps="toolset"
+          />
+        
+    </genericsetup:upgradeSteps>
+</configure>

@@ -1,0 +1,291 @@
+/* Stylesheet for the 'MSCTheme' Plone theme */
+
+
+body {
+    background-color: #f7f8f9;
+}
+
+#visual-portal-wrapper {
+    background:url(++resource++msc.sitetheme.images/background.jpg) 0px 0px repeat-x transparent;
+}
+
+#visual-site-wrapper {
+    background:transparent;
+}
+
+
+#site-wrapper {
+    background:url(++resource++msc.sitetheme.images/portal-top.jpg) 0px 0px no-repeat transparent;
+    width: 930px;
+    margin: 0px auto 0px auto;
+}
+
+#portal-top {
+    height: 235px;
+}
+
+/* The global section tabs. */
+#portal-globalnav {
+    background:url(++resource++msc.sitetheme.images/globalnav-bg.png) 0px 0px repeat-x transparent;
+    padding: 0px 0px 0px 0px;
+    white-space: nowrap;
+    list-style: none;
+    margin: 0;
+    height: 55px;
+    width: 65.5%;
+    line-height: normal;
+    border: 1px solid #ebeced;
+    -moz-border-radius-bottomright:10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+#portal-globalnav li {
+    display: inline;
+    padding: 0px 3px 0px 0px;
+    margin: 0px;
+    float:left;
+    border: 0px solid #ccc;
+    background:url(++resource++msc.sitetheme.images/section-border.png) top right no-repeat transparent;
+}
+
+#portal-globalnav li#portaltab-kontakt {
+    background: transparent;
+}
+
+#portal-globalnav li.selected {
+    border: 0px solid #ccc;
+    border-bottom-width: 1px;
+}
+
+
+
+#portal-globalnav li .globalnav-tab {
+    border: 0px solid #071a74;
+    padding: 20px 10px 20px 10px;
+    margin: 0px;
+}
+
+#portal-globalnav li.selected .globalnav-tab {
+    background:url(++resource++msc.sitetheme.images/section-selected.png) 0px 0px repeat-x transparent;
+    border: 0px solid #b63135;
+}
+
+#portal-globalnav li a {
+    /* The normal, unselected tabs. They are all links */
+    background-color: transparent;
+    border: 0px solid #071a74;
+    color: #696a69;
+    height: auto;
+    margin: 0px;
+    padding: 0em 1.25em 0em 1.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#portal-globalnav li.selected a {
+    /* The selected tab. There's only one of this */
+    background: transparent;
+    border: none;
+    color: #0d3267;
+}
+#portal-globalnav li a:hover {
+    background: transparent;
+    border: none;
+    color: #0d3267;
+}
+
+/** @ portal logo **/
+
+#portal-logo {
+    clear: both;
+    display: block;
+    border: none;
+}
+
+#portal-logo img {
+    margin: 2em 0 0 2em;
+}
+
+/** @global-languageselector **/
+
+#portal-languageselector {
+    float: right;
+}
+
+/** @rounded corners - base class for jquery.corners **/
+
+.rounded {
+    border: 2px solid #ebeced;
+    -moz-border-radius:10px;
+    -webkit-border-radius: 10px;
+}
+
+/****************************/
+
+.portlet {
+    border: 2px solid #ebeced;
+    -moz-border-radius:10px;
+    -webkit-border-radius: 10px;
+    background: #fff;
+    margin: 0px 0px 10px 0px;
+}
+
+dt.portletHeader {
+    background:url(++resource++msc.sitetheme.images/portletHeaderNew.png) 0px 0px no-repeat transparent;
+    height: 49px;
+    padding: 15px 0px 0px 45px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.portletItem {
+    border: 0px solid #ebeced;
+}
+
+.portletFooter {
+    border: none;
+    background: transparent;
+}
+
+.portletNavigationTree .portletHeader {
+    display: none;
+}
+
+.portletNavigationTree {
+    border: 2px solid #ebeced;
+}
+
+.portletNavigationTree .portletItem {
+    background:url(++resource++msc.sitetheme.images/navtree-bottom.png) no-repeat bottom left;
+    padding: 10px 0px 500px 0px;
+    border: none;
+}
+
+#portlet-simple {
+    border:none !important;
+    background: transparent;
+}
+
+#portlet-simple .portletItem {
+    padding: 0px;
+}
+
+#portlet-placeholder {
+    background:url(++resource++msc.sitetheme.images/navtree-bottom.png) no-repeat bottom left white;
+    padding: 10px 0px 500px 0px;
+}
+
+#portlet-images {
+    background:url(++resource++msc.sitetheme.images/navtree-bottom.png) no-repeat bottom left white;
+    padding: 10px 0px 40px 0px;
+}
+
+#portlet-images .portletItem {
+    text-align: center;
+    padding: 1em 0.5em;
+}
+
+
+#portal-content-wrapper {
+
+}
+
+#portal-column-content {
+    border: 2px solid #ebeced;
+    -moz-border-radius:10px;
+    -webkit-border-radius: 10px;
+    background: url(++resource++msc.sitetheme.images/bg-content.png) repeat-x bottom left white;
+}
+
+/** @portletStaticText **/
+
+.portletStaticText .portletItem ul {
+    list-style: none;
+    margin: 0px;
+}
+
+.portletStaticText .portletItem ul li {
+    list-style-image: none;
+    background:url(++resource++msc.sitetheme.images/bullet.gif) no-repeat 0px 4px transparent;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.portlet-static-partner .portletHeader {
+    display: none;
+}
+
+.portlet-static-partner .portletItem {
+    background:url(++resource++msc.sitetheme.images/portlet-partner-bg.jpg) repeat-x left bottom transparent;
+}
+
+/** @content **/
+
+.documentContent {
+    background: transparent;
+}
+
+.documentFirstHeading {
+    color: #7292b7;
+    border: 0px dotted #7292b7;
+    border-bottom-width: 1px;
+}
+
+#content h2,
+#content h3 {
+    color: #7292b7;
+    border: none;
+}
+
+#content ul {
+    list-style: none;
+}
+
+#content ul li {
+    list-style-image: none;
+    background:url(++resource++msc.sitetheme.images/bullet.gif) no-repeat 0px 4px transparent;
+    padding-left: 10px;
+}
+
+#content table td {
+    vertical-align: top;
+}
+
+#content table td p,
+#content table td img {
+    padding: 0px;
+    margin: 0px;
+}
+
+.documentActions {
+    border: none;
+}
+
+.documentActions li {
+    background: transparent !important;
+}
+
+/** @ portal-footer **/
+
+#portal-footer {
+    text-align:center;
+    border: 2px solid #ebeced;
+/**    -moz-border-radius:10px;
+    -webkit-border-radius: 10px; **/
+    background: url(++resource++msc.sitetheme.images/footer-bg.png) repeat-x bottom left white;
+    padding: 10px;
+}
+
+#footer-content-left {
+    text-align: left;
+    float:left;
+    width:60%;
+    line-height: 150%;
+}
+
+#footer-content-right {
+    background:url(++resource++msc.sitetheme.images/msc-logo.png) 0px 0px no-repeat transparent;
+    float:right;
+    width: 35%;
+    padding: 20px 0px 20px 10px;
+    color:#0d3267;
+    font-size: 120%;
+}

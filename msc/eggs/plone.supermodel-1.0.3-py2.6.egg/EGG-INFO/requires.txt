@@ -1,0 +1,10 @@
+setuptools
+zope.component
+zope.interface
+zope.schema
+zope.deferredimport
+zope.dottedname
+elementtree
+
+[test]
+zope.app.testing

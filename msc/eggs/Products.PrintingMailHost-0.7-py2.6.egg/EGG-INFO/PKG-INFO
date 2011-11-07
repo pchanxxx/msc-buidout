@@ -1,0 +1,174 @@
+Metadata-Version: 1.0
+Name: Products.PrintingMailHost
+Version: 0.7
+Summary: A monkey patch to send MailHost messages to standard out
+Home-page: http://svn.plone.org/svn/collective/Products.PrintingMailHost
+Author: Martin Aspeli
+Author-email: plone-developers@lists.sourceforge.net
+License: GPL
+Description: 
+        PrintingMailHost
+        ================
+        
+        This is a hack. :)
+        
+        This product, when installed, will check if Zope is running in debug mode,
+        and if so, monkey patch (that is, grab the internals of, squeeze tight, then
+        rip hard, just like monkeys do) Zope's MailHost class, meaning that *any and
+        all* uses of a MailHost will be "fixed" so that instead of sending mail, it
+        prints messages to the standard output.
+        
+        This is useful if you don't have a local mailhost for testing, or if you
+        prefer not to spam the crap out of yourself whilst finding out if your bulk
+        mail script is working.
+        
+        If Zope is not running in debug mode, it will not install itself. However,
+        I wouldn't recommend putting it on a production site. You never know what
+        those monkeys may get up to...
+        
+        You can optionally enable the PrintingMailHost with an environment variable
+        as of version 0.3.  See the installation instructions for more information
+        about how to use it.
+        
+        Author
+        ------
+        
+        Martin Aspeli <optilude (AT) gmx (DOT) net>
+        Initial idea, release management
+        
+        Contributors
+        ------------
+        
+        Dorneles Tremea <deo (AT) plonesolutions (DOT) com>
+        Fixed to work both with old-style and new-style classes. Extended
+        to also patch SecureMailBase from SecureMailHost, if available.
+        
+        Clayton Parker <clayton (AT) sixfeetup (DOT) com>
+        
+        Maurits van Rees <maurits (AT) vanrees (DOT) org>
+        
+        
+        Products.PrintingMailHost Installation
+        ======================================
+        
+        To install Products.PrintingMailHost into the global Python environment (or a workingenv),
+        using a traditional Zope 2 instance, you can do this:
+        
+        - When you're reading this you have probably already run
+        ``easy_install Products.PrintingMailHost``. Find out how to install setuptools
+        (and EasyInstall) here:
+        http://peak.telecommunity.com/DevCenter/EasyInstall
+        
+        Alternatively, if you are using zc.buildout and the plone.recipe.zope2instance
+        recipe to manage your project, you can do this:
+        
+        - Add ``Products.PrintingMailHost`` to the list of eggs to install, e.g.::
+        
+        [buildout]
+        ...
+        eggs =
+        ...
+        Products.PrintingMailHost
+        
+        - If you want to enable PrintingMailHost when debug-mode is off::
+        
+        [instance]
+        ...
+        environment-vars =
+        ...
+        ENABLE_PRINTING_MAILHOST True
+        
+        - If you want to disable PrintingMailHost when debug-mode is on::
+        
+        [instance]
+        ...
+        environment-vars =
+        ...
+        ENABLE_PRINTING_MAILHOST False
+        
+        - Re-run buildout in order to make any of the above changes active::
+        
+        $ ./bin/buildout
+        
+        
+        Changelog
+        =========
+        
+        0.7 (2010-01-05)
+        ----------------
+        
+        - Also patch (Secure)MaildropHost when available.
+        [maurits]
+        
+        
+        0.6 (2010-01-05)
+        ----------------
+        
+        - Allow passing keyword 'immediate'.  Needed for Plone 4 compatibility.
+        [maurits]
+        
+        
+        0.5 (2009-08-07)
+        ----------------
+        
+        - Fix email Message import
+        [claytron]
+        
+        
+        0.4 (2009-07-24)
+        ----------------
+        
+        - Rough support for multipart email messages
+        [iElectric]
+        
+        
+        0.3 (2009-03-22)
+        ----------------
+        
+        - Decode base64 encoded email messages
+        [claytron]
+        
+        - Added environment variable (ENABLE_PRINTING_MAILHOST) to enable
+        or disable PrintingMailHost
+        [claytron]
+        
+        - Update README and HISTORY.txt
+        [claytron]
+        
+        
+        0.2 (2008-08-20)
+        ----------------
+        
+        - Release as an egg to PyPi
+        [claytron]
+        
+        
+        0.1
+        ---
+        
+        - Updated to use the new standard log mechanism: logging.getLogger.
+        Reformated messages/docstrings.
+        [dtremea] (2006-03-17)
+        
+        - Extended to also patch SecureMailBase from SecureMailHost, if
+        available.
+        [dtremea] (2005-10-23)
+        
+        - Fixed to work both with old-style and new-style classes, as in
+        the later, dict is a 'dictproxy' instance, which doesn't have the
+        setitem method. Bumpped version. Noted changes. And clean up
+        whitespaces, of course... ;-)
+        [dtremea] (2005-10-23)
+        
+        - Initial creation/release
+        [optilude] (2005-04-05)
+        
+        
+        Download
+        ========
+        
+Keywords: zope debug mailhost
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

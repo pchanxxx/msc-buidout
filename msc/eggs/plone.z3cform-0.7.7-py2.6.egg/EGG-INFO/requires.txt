@@ -1,0 +1,10 @@
+setuptools
+z3c.form
+z3c.batching
+zope.i18n>=3.4
+zope.component
+collective.monkeypatcher
+
+[test]
+lxml
+zope.app.testing

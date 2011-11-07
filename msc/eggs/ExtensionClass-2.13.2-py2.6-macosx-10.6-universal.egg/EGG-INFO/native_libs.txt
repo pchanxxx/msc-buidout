@@ -1,0 +1,3 @@
+ComputedAttribute/_ComputedAttribute.so
+ExtensionClass/_ExtensionClass.so
+MethodObject/_MethodObject.so

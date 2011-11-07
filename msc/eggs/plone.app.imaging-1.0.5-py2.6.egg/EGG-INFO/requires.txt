@@ -1,0 +1,5 @@
+setuptools
+plone.scale [storage]
+
+[test]
+collective.testcaselayer

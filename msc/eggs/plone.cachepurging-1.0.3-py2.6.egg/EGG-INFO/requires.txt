@@ -1,0 +1,13 @@
+setuptools
+five.globalrequest
+plone.registry
+zope.annotation
+zope.component
+zope.event
+zope.i18nmessageid
+zope.interface
+zope.lifecycleevent
+Zope2
+
+[test]
+plone.app.testing

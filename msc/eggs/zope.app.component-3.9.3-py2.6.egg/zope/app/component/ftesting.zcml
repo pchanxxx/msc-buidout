@@ -1,0 +1,34 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   i18n_domain="zope"
+   package="zope.app.component"
+   >
+
+  <!-- This file is the equivalent of site.zcml and it is -->
+  <!-- used for functional testing setup -->
+
+  <include package="zope.securitypolicy" file="meta.zcml" />
+
+  <include package="zope.app.zcmlfiles" />
+  <include package="zope.securitypolicy" />
+  <include package="zope.formlib" />
+  <include package="zope.login" />
+  <include package="zope.password" />
+
+  <securityPolicy
+      component="zope.securitypolicy.zopepolicy.ZopeSecurityPolicy" />
+
+  <role id="zope.Manager" title="Site Manager" />
+
+  <grantAll role="zope.Manager" />
+
+  <!-- Principal that tests generally run as -->
+  <principal
+      id="zope.mgr"
+      title="Manager"
+      login="mgr"
+      password="mgrpw" />
+
+  <grant role="zope.Manager" principal="zope.mgr" />
+
+</configure>

@@ -1,0 +1,338 @@
+Metadata-Version: 1.0
+Name: z3c.blobfile
+Version: 0.1.5
+Summary: File and Image Using Blob Support of ZODB -- Zope 3 Content Components
+Home-page: http://pypi.python.org/pypi/z3c.blobfile
+Author: Zope Community
+Author-email: zope-dev@zope.org
+License: ZPL 2.1
+Description: Blob File
+        =========
+        
+        This package provides an implementation of zope.app.file.interfaces.IFile
+        which uses the Blob support introduced in ZODB 3.8. It's main purpose
+        is to provide an easy migration path for existing instances. For more
+        advanced file implementations see zope.file and z3c.extfile.
+        
+        The standard implementation in zope.app.file uses chunk objects to
+        break big files into manageable parts. These chunks flow the server caches
+        whereas blobs are directly consumed by the publisher. The main difference
+        between this blob implementation and the old zope.app.file implementation
+        can be seen in a replacement of the chunk objects by Blobs.
+        
+        
+        Detailed Documentation
+        ----------------------
+        
+        
+        Blob File Implementation
+        ========================
+        
+        This implementation of zope.app.file.interfaces.IFile takes advantage
+        of the new ZODB blob support and tries to be completely backward compatible to
+        the existing file implementation in zope.app.file.
+        
+        Compatibility with zope.app.file.File
+        -------------------------------------
+        
+        The following tests mimic exactly the tests of the zope.app.file package.
+        
+        Let's test the constructor:
+        
+        >>> from zope.app.file import File, Image
+        
+        >>> file = File()
+        >>> file.contentType
+        ''
+        >>> file.data
+        ''
+        
+        >>> file = File('Foobar')
+        >>> file.contentType
+        ''
+        >>> file.data
+        'Foobar'
+        
+        >>> file = File('Foobar', 'text/plain')
+        >>> file.contentType
+        'text/plain'
+        >>> file.data
+        'Foobar'
+        
+        >>> file = File(data='Foobar', contentType='text/plain')
+        >>> file.contentType
+        'text/plain'
+        >>> file.data
+        'Foobar'
+        
+        
+        Let's test the mutators:
+        
+        >>> file = File()
+        >>> file.contentType = 'text/plain'
+        >>> file.contentType
+        'text/plain'
+        
+        >>> file.data = 'Foobar'
+        >>> file.data
+        'Foobar'
+        
+        >>> file.data = None
+        Traceback (most recent call last):
+        ...
+        TypeError: Cannot set None data on a file.
+        
+        
+        Let's test large data input:
+        
+        >>> file = File()
+        
+        Insert as string:
+        
+        >>> file.data = 'Foobar'*60000
+        >>> file.getSize()
+        360000
+        >>> file.data == 'Foobar'*60000
+        True
+        
+        Insert data as FileChunk:
+        
+        >>> from zope.app.file.file import FileChunk
+        >>> fc = FileChunk('Foobar'*4000)
+        >>> file.data = fc
+        >>> file.getSize()
+        24000
+        >>> file.data == 'Foobar'*4000
+        True
+        
+        Insert data from file object:
+        
+        >>> import cStringIO
+        >>> sio = cStringIO.StringIO()
+        >>> sio.write('Foobar'*100000)
+        >>> sio.seek(0)
+        >>> file.data = sio
+        >>> file.getSize()
+        600000
+        >>> file.data == 'Foobar'*100000
+        True
+        
+        
+        Last, but not least, verify the interface:
+        
+        >>> from zope.interface.verify import verifyClass
+        >>> zope.app.file.interfaces.IFile.implementedBy(File)
+        True
+        >>> verifyClass(zope.app.file.interfaces.IFile, File)
+        True
+        
+        
+        Test of Filerepresentation Adapters
+        -----------------------------------
+        
+        >>> from zope.app.file.file import FileReadFile
+        >>> file = File()
+        >>> content = "This is some file\\ncontent."
+        >>> file.data = content
+        >>> file.contentType = "text/plain"
+        >>> FileReadFile(file).read() == content
+        True
+        >>> FileReadFile(file).size() == len(content)
+        True
+        
+        >>> from zope.app.file.file import FileWriteFile
+        >>> file = File()
+        >>> content = "This is some file\\ncontent."
+        >>> FileWriteFile(file).write(content)
+        >>> file.data == content
+        True
+        
+        
+        
+        Evolution of Existing Files
+        ---------------------------
+        
+        Please note that the following code is experimental. The code should not be
+        used in production without careful testing. Backup your Data.fs and uncomment
+        the following lines in the configure.zcml if you want to replace exiting
+        zope.app.file.File instances.
+        
+        <utility
+        component=".generations.BlobFileSchemaManager"
+        name="z3c.blobfile"
+        />
+        
+        Let's assume that you have already an existing database with zope.app.file
+        content types:
+        
+        >>> from z3c.blobfile import testing
+        >>> root = getRootFolder()
+        
+        >>> root[u'file'] = File('A text file', contentType='text/plain')
+        >>> root[u'image'] = Image(testing.zptlogo)
+        
+        Since the evolve step looks for implementations of IFile we also must
+        provide a way to recognize other implementations than zope.app.file.File and
+        Image. Let's add a nonsense implementation as an example:
+        
+        >>> root[u'custom'] = testing.MyFile()
+        
+        Note that we cannot assume that these objects exist in isolation. Many of
+        them probably are annotated, indexed, some even may be registered as utility
+        etc. The evolution step throws the standard events when the objects
+        are replaced and it's up the application that this replacement is recognized
+        accordingly. If your application has special needs you may subscribe to the
+        FileReplacedEvent.
+        
+        We will not test all relations to all other objects, since this is largely
+        application dependent. Here we only take the ZopeDublinCore timestamps as
+        an example that our evolution step leaves as many things untouched as possible.
+        
+        >>> from zope.dublincore.interfaces import IZopeDublinCore
+        >>> import datetime
+        
+        >>> IZopeDublinCore(root[u'file']).created = datetime.datetime.utcnow()
+        >>> t1 = IZopeDublinCore(root[u'file']).created
+        >>> IZopeDublinCore(root[u'file']).title = u'No evolution'
+        
+        Now we perform the basic evolution steps. Since we expect some warning logs
+        we need
+        
+        >>> from zope.testing.loggingsupport import InstalledHandler
+        >>> import logging
+        >>> log_handler = InstalledHandler('z3c.blobfile.generations')
+        
+        >>> from z3c.blobfile.generations.evolve1 import evolveZopeAppFile
+        >>> evolveZopeAppFile(root)
+        >>> transaction.commit()
+        
+        >>> for record in log_handler.records:
+        ...     print record.getMessage()
+        Unknown ...interfaces.IFile implementation z3c.blobfile.testing.MyFile
+        
+        After the evolution step the class types have changed to the z3c.blobfile
+        implementations:
+        
+        >>> import z3c.blobfile
+        >>> isinstance(root[u'file'], z3c.blobfile.file.File)
+        True
+        >>> isinstance(root[u'image'], z3c.blobfile.image.Image)
+        True
+        
+        Only the custom implementations remain untouched:
+        
+        >>> isinstance(root[u'custom'], testing.MyFile)
+        True
+        
+        The file data remain the same ...
+        
+        >>> root[u'file'].data
+        'A text file'
+        >>> root[u'file'].contentType
+        'text/plain'
+        
+        >>> root[u'image'].data == testing.zptlogo
+        True
+        
+        and so do the annotations:
+        
+        >>> IZopeDublinCore(root[u'file']).created == t1
+        True
+        >>> IZopeDublinCore(root[u'file']).title
+        u'No evolution'
+        
+        Even implementation details like the _data attribute still work:
+        
+        >>> root[u'file']._data
+        'A text file'
+        
+        
+        Copying
+        -------
+        
+        Let's check that blob files can be copied successfully. This
+        functionality requires the new "zope.copy" package and the
+        version of zope.copypastemove that uses zope.copy (>=3.5.1).
+        
+        >>> from zope.copy import copy
+        >>> file = z3c.blobfile.file.File()
+        >>> file.data = u'hello, world'
+        >>> image = z3c.blobfile.file.File()
+        >>> image.data = 'some image bytes'
+        >>> transaction.commit()
+        
+        >>> file_copy = copy(file)
+        >>> file_copy.data == file.data
+        True
+        
+        >>> image_copy = copy(image)
+        >>> image_copy.data == image.data
+        True
+        
+        
+        =======
+        CHANGES
+        =======
+        
+        0.1.5 (2011-02-11)
+        ------------------
+        
+        - Put a ceiling (64k) on the number of info bytes read and read those bytes in
+        one shot.
+        
+        - Bug: Correctly detect the dimensions of JPEG images with the dimensions
+        in a position greater than IMAGE_INFO_BYTES.
+        
+        - Made tests compatible with ZODB 3.9.
+        
+        
+        0.1.4 (2009-03-03)
+        ------------------
+        
+        - Add copy hook for zope.copy to fix blob file/image copying.
+        - Change package's mailing list address to zope-dev at zope.org
+        instead of retired zope3-dev.
+        
+        0.1.3 (2008-10-20)
+        ------------------
+        
+        - Bug: Don't get/set image data twice on Image initialization.
+        - Cache file size and invalidate it on write access.
+        - Download file/image using new openDetached method that provides
+        read-only file-like access to the blob, detached from the database
+        connection.
+        
+        0.1.2 (2008-09-11)
+        ------------------
+        
+        - Bug: Set i18n domain in "overrides.zcml" to avoid warnings.
+        - Don't expose Blob implementation details in add/upload forms. Also, "zope"
+        translation domain has no translations for "Upload a File (Blob)", it just
+        has "Upload a File" translations, so use it.
+        
+        0.1.1 (2008-09-08)
+        ------------------
+        
+        - Bug: Register zope.app.wsgi.fileresult.FileResult as an adapter for BlobFile,
+        making optimized file views really work.
+        - Bug: Also use optimized file view for z3c.blobfile.image.Image.
+        - Bug: Make blob versions of File and Image implement IBlobFile and
+        IBlobImage interfaces respectively. This enables z3c.blobfile's views.
+        - Bug: Use local ZopeMessageFactory. This fixes import error on Zope 2.10
+        
+        0.1.0 (2008-02-27)
+        ------------------
+        
+        - Initial Release
+        
+Keywords: zope3 ZODB blob file image content
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Framework :: Zope3

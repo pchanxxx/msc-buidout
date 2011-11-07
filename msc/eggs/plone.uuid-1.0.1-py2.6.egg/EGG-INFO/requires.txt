@@ -1,0 +1,5 @@
+setuptools
+zope.interface
+zope.lifecycleevent
+zope.publisher
+zope.app.publisher

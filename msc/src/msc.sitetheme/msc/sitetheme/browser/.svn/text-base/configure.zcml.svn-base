@@ -1,0 +1,48 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="msc.sitetheme">
+
+  <!-- 'MSCTheme' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="MSCTheme"
+      />
+  
+  <!-- Viewlets registration -->
+	<browser:viewlet
+		name="msc.global_sections"
+		manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+		class=".viewlets.GlobalSectionsViewlet"
+		layer=".interfaces.IThemeSpecific"
+		permission="zope2.View"
+		/>
+
+	   <!-- Footer -->
+	<browser:viewlet
+	    name="plone.footer"
+	    for="*"
+	    manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+	    template="templates/footer.pt"
+	    layer=".interfaces.IThemeSpecific"
+	    permission="zope.Public"
+	    />
+
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images -->
+  <browser:resourceDirectory
+      name="msc.sitetheme.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+      name="msc.sitetheme.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+</configure>

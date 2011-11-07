@@ -1,0 +1,10 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <adapter factory=".location.LocationProxy" />
+  <adapter zcml:condition="installed zope.copy"
+           factory=".pickling.LocationCopyHook" />
+  <adapter factory=".traversing.LocationPhysicallyLocatable" />
+  <adapter factory=".traversing.RootPhysicallyLocatable" />
+
+</configure>

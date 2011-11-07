@@ -1,0 +1,37 @@
+10
+
+dir
+5077
+svn+ssh://root@admin.vorwaerts-werbung.de/opt/svn/main/zope/products/msc/msc.sitetheme/trunk/msc/sitetheme/skins
+svn+ssh://root@admin.vorwaerts-werbung.de/opt/svn/main
+
+
+
+2010-07-22T14:04:52.463770Z
+2768
+erika
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67216a8a-2a17-47b2-a829-b257d24152a7
+
+msc_sitetheme_custom_templates
+dir
+
+msc_sitetheme_custom_images
+dir
+
+msc_sitetheme_styles
+dir
+

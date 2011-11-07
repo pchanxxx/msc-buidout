@@ -1,0 +1,72 @@
+# Translation of atreferencebrowserwidget.pot to Polish
+# Radoslaw Stachowiak <radek@alter.pl>, 2002-2006
+msgid ""
+msgstr ""
+"Project-Id-Version: ATReferenceBrowserWidget\n"
+"POT-Creation-Date: 2011-02-24 14:48+0000\n"
+"PO-Revision-Date: 2007-09-02 22:04+0100\n"
+"Last-Translator: Radoslaw Stachowiak <rstachowiak@gmail.com>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: pl\n"
+"Language-Name: Polish\n"
+"Preferred-Encodings: latin2 utf-8\n"
+"Domain: atreferencebrowserwidget\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. Default: "Add..."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:189
+msgid "label_add"
+msgstr "Dodaj..."
+
+#. Default: "(Directory: ${directory})"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:48
+msgid "label_directory"
+msgstr "(Folder: ${directory})"
+
+#. Default: "Go"
+#: archetypes/referencebrowserwidget/browser/popup.pt:118
+msgid "label_go"
+msgstr "Dalej"
+
+#. Default: "No reference set. Click the add button to select."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:136
+#, fuzzy
+msgid "label_no_reference_set"
+msgstr "Nie ustanowiono odwołania. Kliknij Przeglądaj aby je wybrać."
+
+#. Default: "Clear reference"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:195
+#, fuzzy
+msgid "label_remove_reference"
+msgstr "Usuń odwołanie"
+
+#. Default: "History"
+#: archetypes/referencebrowserwidget/browser/popup.pt:113
+msgid "referencebrowser_history"
+msgstr "Historia"
+
+#. Default: "No items found."
+#: archetypes/referencebrowserwidget/browser/popup.pt:152
+msgid "referencebrowser_no_items_found"
+msgstr "Nie znaleziono żadnych elementów."
+
+#. Default: "Search index"
+#: archetypes/referencebrowserwidget/browser/popup.pt:53
+msgid "referencebrowser_search_index_label"
+msgstr "Indeks Wyszukiwania"
+
+#. Default: "Added"
+#: archetypes/referencebrowserwidget/browser/popup.pt:29
+#, fuzzy
+msgid "referencebrowser_text_added_reference"
+msgstr "Odwołanie dodano do:"
+
+#. Default: "Removed"
+#: archetypes/referencebrowserwidget/browser/popup.pt:37
+msgid "referencebrowser_text_removed_reference"
+msgstr ""
+

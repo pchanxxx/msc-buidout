@@ -1,0 +1,13 @@
+#!/Users/anjaradtke/vw-devel/msc/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/z3c.checkversions-0.4.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zc.buildout-1.4.4-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/distribute-0.6.21-py2.6.egg',
+  ]
+
+import z3c.checkversions.main
+
+if __name__ == '__main__':
+    z3c.checkversions.main.main()

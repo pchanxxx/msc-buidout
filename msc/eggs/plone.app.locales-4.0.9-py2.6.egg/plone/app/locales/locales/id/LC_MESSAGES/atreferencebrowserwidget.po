@@ -1,0 +1,68 @@
+# Translation of atreferencebrowserwidget.pot to Bahasa Indonesia
+# Rizal M. <rizal@gen.net.id>, 2005
+msgid ""
+msgstr ""
+"Project-Id-Version: ATReferenceBrowserWidget\n"
+"POT-Creation-Date: 2011-02-24 14:48+0000\n"
+"PO-Revision-Date: 2009-10-31 16:37+0100\n"
+"Last-Translator: Isnu Suntoro <isnusun@gmail.com>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: id\n"
+"Language-Name: Bahasa Indonesia\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: atreferencebrowserwidget\n"
+
+#. Default: "Add..."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:189
+msgid "label_add"
+msgstr "Tambah..."
+
+#. Default: "(Directory: ${directory})"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:48
+msgid "label_directory"
+msgstr "( Direktori: ${directory})"
+
+#. Default: "Go"
+#: archetypes/referencebrowserwidget/browser/popup.pt:118
+msgid "label_go"
+msgstr "Grak"
+
+#. Default: "No reference set. Click the add button to select."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:136
+msgid "label_no_reference_set"
+msgstr "TIdak ada referensi. Klik pada tombol Tambah."
+
+#. Default: "Clear reference"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:195
+msgid "label_remove_reference"
+msgstr "Hapus referensi"
+
+#. Default: "History"
+#: archetypes/referencebrowserwidget/browser/popup.pt:113
+msgid "referencebrowser_history"
+msgstr "Riwayat"
+
+#. Default: "No items found."
+#: archetypes/referencebrowserwidget/browser/popup.pt:152
+msgid "referencebrowser_no_items_found"
+msgstr "Tidak ditemukan"
+
+#. Default: "Search index"
+#: archetypes/referencebrowserwidget/browser/popup.pt:53
+msgid "referencebrowser_search_index_label"
+msgstr "Indeks pencarian"
+
+#. Default: "Added"
+#: archetypes/referencebrowserwidget/browser/popup.pt:29
+msgid "referencebrowser_text_added_reference"
+msgstr "Referensi yang ditambahkan ke:"
+
+#. Default: "Removed"
+#: archetypes/referencebrowserwidget/browser/popup.pt:37
+msgid "referencebrowser_text_removed_reference"
+msgstr ""
+

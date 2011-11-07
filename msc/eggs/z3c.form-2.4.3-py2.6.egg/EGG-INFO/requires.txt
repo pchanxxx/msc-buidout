@@ -1,0 +1,44 @@
+setuptools
+zope.browser
+zope.component
+zope.configuration
+zope.contentprovider
+zope.event
+zope.i18n
+zope.i18nmessageid
+zope.interface
+zope.lifecycleevent
+zope.location
+zope.pagetemplate
+zope.publisher
+zope.schema >= 3.6.0
+zope.security
+zope.traversing
+
+[adding]
+zope.app.container
+
+[extra]
+z3c.pt >= 1.0b4
+z3c.ptcompat
+
+[test]
+lxml >= 2.1.1
+z3c.coverage
+z3c.template
+zc.sourcefactory
+zope.app.component
+zope.app.container
+zope.app.pagetemplate
+zope.app.security
+zope.app.testing
+zope.testing
+
+[docs]
+z3c.recipe.sphinxdoc
+
+[zope34]
+zope.app.component
+
+[latest]
+zope.site

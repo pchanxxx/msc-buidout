@@ -1,0 +1,10 @@
+setuptools
+zope.interface
+Products.CMFCore
+Products.GenericSetup
+Acquisition
+Zope2
+
+[test]
+zope.component
+Products.CMFTestCase

@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: msc.sitetheme
+Version: 1.0dev
+Summary: An installable theme for Plone 3.0
+Home-page: http://www.vorwaerts-werbung.de
+Author: Christoph Boehner
+Author-email: hallo@vorwaerts-werbung.de
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        Changelog
+        =========
+        
+        1.0 - Unreleased
+        ----------------
+        
+        * Initial release
+        
+        
+Keywords: web zope plone theme
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

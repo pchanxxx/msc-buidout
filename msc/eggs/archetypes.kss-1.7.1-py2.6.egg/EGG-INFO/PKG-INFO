@@ -1,0 +1,269 @@
+Metadata-Version: 1.0
+Name: archetypes.kss
+Version: 1.7.1
+Summary: KSS (Kinetic Style Sheets) for Archetypes
+Home-page: http://plone.org
+Author: Plone Foundation
+Author-email: plone-developers@lists.sourceforge.net
+License: GPL
+Description: Overview
+        ========
+        
+        KSS (Kinetic Style Sheets) for Archetypes
+        
+        This product gives generic KSS support to Archetypes. It depends on the product
+        "kss.core" and "plone.app.kss".
+        
+        Features implemented
+        --------------------
+        
+        - In-place field validation. In the edit field, when a field area is left,
+        the field gets validated and field error  message is displayed.
+        
+        This must be implemented for each field type individually. At the moment,
+        only the stringField is done. To test, go to a mandatory field like Title,
+        delete its value and try to leave it.
+        
+        - In-place form submission. When the Save button is pressed, we first validate
+        the entire form from the page. If we have an error, we stay in the page and
+        display the portal status message, plus every field error message. If there is
+        no error, we resubmit the form.
+        
+        The form resubmission may be implemented in a more effective way in the future,
+        together with the total rewrite of AT's current submission scripts.
+        
+        Missing/TODOS:
+        
+        - Implement field validation for all the other field types.
+        
+        - There is a lingering UnicodeDecodeError during the rendering of document_view.
+        UPDATE. The problem is related to Zope 2.10 and/or AT,
+        but since I can't run AT trunk on Zope 2.9, I will need to provide a fix...
+        
+        - The popups for leaving the edit region are not hooked in. This means that sometimes
+        the "do you want to leave the page" popup comes in where it should not be.
+        
+        - The loading of the kupu editor is done with a simple hack, it seems to
+        be no clean way in javascript to find when the iframe has been loaded,
+        some more complex hack is needed for this that works on all browsers
+        and is reliable in all the cases.
+        
+        KSS extensions defined for general purpose use
+        ----------------------------------------------
+        
+        - A generic macro replacer server action
+        
+        - client action for submitting to an url
+        
+        - client action for submitting the current form
+        
+        Changelog
+        =========
+        
+        1.7.1 (2011-07-19)
+        ------------------
+        
+        - The change r12412 in 1.6.0a3 introduced a regression,
+        the field inline validating error message was not shown to the user.
+        The error message is not always the "required field" message, so it's
+        problematic to not show the error message in all cases.
+        The warning_only parameter is now set to False in the issueFieldError call so
+        the error message appears again.
+        [vincentfretin]
+        
+        1.7.0 (2011-01-03)
+        ------------------
+        
+        - Use plone.uuid to look up content UUIDs.
+        [toutpt, davisagli]
+        
+        1.6.0 (2010-07-31)
+        ------------------
+        
+        - Calling it a 1.6.0 final, no changes since b1.
+        [esteele]
+        
+        1.6.0b1 (2010-05-01)
+        --------------------
+        
+        - Check for inline editing status on an actual field in the content-core, not
+        title which is now rendered by hand.
+        [davisagli]
+        
+        1.6.0a3 (2010-03-09)
+        --------------------
+        
+        - Made error message be a warning instead before the form has been submitted,
+        this causes less disruption in a form while editing.
+        [joelburton]
+        
+        
+        1.6.0a2 (2010-03-09)
+        --------------------
+        
+        - Fixed test failure in testVersionPreviewIsNotInlineEditable.
+        [hannosch]
+        
+        1.6.0a1 (2009-11-19)
+        --------------------
+        
+        - Fixed validation test to work with plone.app.blob files.
+        
+        - Updated reference to IATDocument from Products.ATContentTypes to the
+        standard location.
+        [hannosch]
+        
+        1.4.3 (2008-11-02)
+        ------------------
+        
+        - Enable unlock on unload for inline edits.
+        [alecm]
+        
+        1.4.2 (2008-08-18)
+        ------------------
+        
+        - Using an adapter to determine whether inline editing is enabled, so
+        the default behaviour can easily be overridden.
+        [fschulze]
+        
+        - Added check for site_property 'enable_inline_editing'. This is a global
+        setting which can still be overwritten with kss_inline_editable.
+        [fschulze]
+        
+        - Adjusted deprecation warnings to point to Plone 4.0 instead of Plone 3.5
+        since we changed the version numbering again.
+        [hannosch]
+        
+        1.4 (2008-04-21)
+        ----------------
+        
+        - test on global_inline_editable should happen only in
+        getKssClassesInlineEditable()
+        Fixed disabling of inline editing
+        [fschulze]
+        
+        - Some Archetypes-validators expect the request
+        as a keyword argument. Fixes #8005.
+        [mborch]
+        
+        1.4-rc1 (2008-03-25)
+        --------------------
+        
+        - prepare for release
+        [ree]
+        
+        1.4-alpha1 (2008-03-09)
+        -----------------------
+        
+        - prepare for release
+        [ree]
+        
+        1.2.6 (2008-01-03)
+        ------------------
+        
+        - Fixed i18n markup in fields_versioning.py.
+        [hannosch]
+        
+        1.2.5 (2008-01-03)
+        ------------------
+        
+        - Changed 'saveField' to not require 'value' explicitly
+        but to take it from the request if missing.
+        This was done to support the use of
+        saveField-kssSubmitForm: currentForm();
+        which is needed for multi-valued form variables.
+        [raphael]
+        
+        1.2.4.1 (2007-12-07)
+        --------------------
+        
+        - Handle aborted versioning due to exceedingly
+        large files.
+        (Fixes http://dev.plone.org/plone/ticket/7236)
+        [alecm]
+        
+        1.2.4 (2007-12-06)
+        ------------------
+        
+        - Fix #7236: Handle unregistered objects with a version id
+        during inline edit.
+        [alecm]
+        
+        1.2.3 (2007-11-08)
+        ------------------
+        
+        - prepare for release
+        [ree]
+        
+        1.2.2 (2007-10-06)
+        ------------------
+        
+        - Prepare for release
+        [ree]
+        
+        1.2-1 (2007-09-10)
+        ------------------
+        
+        - UID refactoring for fields (inline editing) support
+        [mborch]
+        
+        - Make sure inline edit is not active in the versioning preview.
+        (fixes #6958). From now on, the kss_inline_editable
+        variable can be defined to False in a template and this will
+        cause the contained widgets to be not inline editable
+        even though their condition would allow it.
+        [ree]
+        
+        - implement versioning work with inline edit (fixes #6938)
+        [ree]
+        
+        1.2 (2007-08-17)
+        ----------------
+        
+        - Fix bugs and test layer
+        [ree, gotcha, jvloothuis, nouri]
+        
+        1.2-rc2 (2007-07-27)
+        --------------------
+        
+        - inline edit for archetypes widget in view mode, first steps
+        [gotcha]
+        
+        1.2-rc1.1 (2007-07-1a2)
+        -----------------------
+        
+        - Prepare for release
+        [ree]
+        
+        1.2-rc1 (2007-07-08)
+        --------------------
+        
+        - Cleaned up self.context usage. In browser views in Zope2 you need to do
+        an aq_inner on self.context before using it.
+        [hannosch]
+        
+        1.2-beta2 (2007-04-30)
+        ----------------------
+        
+        - Prepare for release
+        [ree]
+        
+        1.2-beta1 (2007-03-04)
+        ----------------------
+        
+        - Prepare for release
+        [ree]
+        
+        1.2-alpha2 (2007-02-10)
+        -----------------------
+        
+        - Preparation for release
+        [ree]
+        
+        - Initial package structure.
+        [zopeskel]
+        
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope2
+Classifier: Programming Language :: Python

@@ -1,0 +1,23 @@
+setuptools
+zope.dottedname
+zope.i18nmessageid
+zope.interface
+Products.CMFCore >=2.1
+Products.CMFDiffTool
+Products.CMFUid
+Products.GenericSetup >=1.4.0
+Products.ZopeVersionControl
+Acquisition
+DateTime
+transaction
+ZODB3
+Zope2
+plone.app.blob
+
+[test]
+zope.testing
+Products.CMFPlone
+Products.Archetypes
+Products.CMFDynamicViewFTI
+Products.PloneTestCase
+collective.monkeypatcher

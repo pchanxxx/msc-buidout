@@ -1,0 +1,4 @@
+setuptools
+zope.container
+zope.site
+zope.app.content

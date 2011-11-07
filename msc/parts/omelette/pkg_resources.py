@@ -1,0 +1,1 @@
+/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/distribute-0.6.21-py2.6.egg/pkg_resources.py

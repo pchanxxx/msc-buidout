@@ -1,0 +1,22 @@
+setuptools
+transaction
+ZODB3
+zope.app.publication
+zope.contenttype>=3.5.0dev
+zope.datetime
+zope.dublincore>=3.7
+zope.event
+zope.exceptions
+zope.filerepresentation
+zope.i18nmessageid
+zope.interface
+zope.schema
+zope.site
+zope.size
+
+[test]
+zope.app.testing
+zope.app.securitypolicy
+zope.app.zcmlfiles
+zope.publisher >= 3.12
+zope.login

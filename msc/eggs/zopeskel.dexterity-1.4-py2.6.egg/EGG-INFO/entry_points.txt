@@ -1,0 +1,9 @@
+
+      # -*- Entry points: -*-
+      [paste.paster_create_template]
+      dexterity = zopeskel.dexterity.dexterity:Dexterity
+
+      [zopeskel.zopeskel_sub_template]
+      dexterity_content = zopeskel.dexterity.localcommands.dexterity:DexterityContent
+      dexterity_behavior = zopeskel.dexterity.localcommands.dexterity:DexterityBehavior
+      

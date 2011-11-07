@@ -1,0 +1,5 @@
+setuptools
+PasteScript
+PasteDeploy
+Paste
+ZopeSkel

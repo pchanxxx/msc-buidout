@@ -1,0 +1,3 @@
+[console_scripts]
+mkrelease=jarn.mkrelease.mkrelease:main
+

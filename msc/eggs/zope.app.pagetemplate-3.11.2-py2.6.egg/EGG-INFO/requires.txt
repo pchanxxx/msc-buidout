@@ -1,0 +1,18 @@
+setuptools
+zope.browserpage>=3.12.0
+zope.component [hook]
+zope.configuration
+zope.dublincore
+zope.i18nmessageid
+zope.interface
+zope.pagetemplate>=3.5.0
+zope.schema
+zope.security [untrustedpython]
+zope.size
+zope.tales
+zope.traversing
+
+[test]
+zope.component [hook,test]
+zope.container
+zope.publisher

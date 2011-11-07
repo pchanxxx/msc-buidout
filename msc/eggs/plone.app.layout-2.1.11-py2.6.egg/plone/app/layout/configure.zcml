@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <include package=".globals" />
+    <include package=".navigation" />
+    <include package=".viewlets" />
+    <include package=".nextprevious" />
+    <include package=".icons" />
+    <include package=".links" />
+    <include package=".sitemap" />
+    <include package=".dashboard" />
+    <include package=".presentation" />
+    <include package=".analytics" />
+
+</configure>

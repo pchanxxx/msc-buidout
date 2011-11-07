@@ -1,0 +1,12 @@
+#!/Users/anjaradtke/vw-devel/msc/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zc.buildout-1.4.4-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/distribute-0.6.21-py2.6.egg',
+  ]
+
+import zc.buildout.buildout
+
+if __name__ == '__main__':
+    zc.buildout.buildout.main()

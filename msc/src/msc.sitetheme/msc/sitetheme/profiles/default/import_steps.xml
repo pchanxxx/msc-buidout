@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="msc.sitetheme.various"
+               version="20090709-01"
+               handler="msc.sitetheme.setuphandlers.setupVarious"
+               title="MSCTheme: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

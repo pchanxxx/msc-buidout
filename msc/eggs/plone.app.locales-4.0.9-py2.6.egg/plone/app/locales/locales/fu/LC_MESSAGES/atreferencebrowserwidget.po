@@ -1,0 +1,72 @@
+# Translation of atreferencebrowserwidget.pot to Furlan
+# Comune di Tavagnacco - Tecnoteca srl 2006
+msgid ""
+msgstr ""
+"Project-Id-Version: ATReferenceBrowserWidget 1.0\n"
+"POT-Creation-Date: 2011-02-24 14:48+0000\n"
+"PO-Revision-Date: 2006-07-18 12:33+0100\n"
+"Last-Translator: Christian Romanini - Comune di Tavagnacco - Tecnoteca srl 2006 <lenghe.furlane@comune.tavagnacco.ud.it> <tecnoteca@tecnoteca.com>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fu\n"
+"Language-Name: Furlan\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: atreferencebrowserwidget\n"
+
+#. Default: "Add..."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:189
+msgid "label_add"
+msgstr ""
+
+#. Default: "(Directory: ${directory})"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:48
+#, fuzzy
+msgid "label_directory"
+msgstr "\"( Cartele: ${directory} )"
+
+#. Default: "Go"
+#: archetypes/referencebrowserwidget/browser/popup.pt:118
+msgid "label_go"
+msgstr ""
+
+#. Default: "No reference set. Click the add button to select."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:136
+#, fuzzy
+msgid "label_no_reference_set"
+msgstr "Nissun riferiment. Frache il boton par selezionâlu."
+
+#. Default: "Clear reference"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:195
+msgid "label_remove_reference"
+msgstr ""
+
+#. Default: "History"
+#: archetypes/referencebrowserwidget/browser/popup.pt:113
+#, fuzzy
+msgid "referencebrowser_history"
+msgstr "Storie"
+
+#. Default: "No items found."
+#: archetypes/referencebrowserwidget/browser/popup.pt:152
+msgid "referencebrowser_no_items_found"
+msgstr "Nol è stât cjatât nissun element."
+
+#. Default: "Search index"
+#: archetypes/referencebrowserwidget/browser/popup.pt:53
+msgid "referencebrowser_search_index_label"
+msgstr "Cîr par tabele"
+
+#. Default: "Added"
+#: archetypes/referencebrowserwidget/browser/popup.pt:29
+#, fuzzy
+msgid "referencebrowser_text_added_reference"
+msgstr "Riferiment zontât a:"
+
+#. Default: "Removed"
+#: archetypes/referencebrowserwidget/browser/popup.pt:37
+msgid "referencebrowser_text_removed_reference"
+msgstr ""
+

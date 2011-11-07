@@ -1,0 +1,5 @@
+setuptools
+zope.interface
+zope.schema>=3.5.1dev
+zope.component>=3.8.0
+zope.proxy>3.3

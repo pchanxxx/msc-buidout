@@ -1,0 +1,32 @@
+#!/Users/anjaradtke/vw-devel/msc/bin/python
+
+import sys
+sys.path[0:0] = [
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zettwerk.i18nduder-0.2.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/i18ndude-3.2.2-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/distribute-0.6.21-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/ordereddict-1.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.i18n-2.0-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.i18nmessageid-3.5.3-py2.6-macosx-10.6-universal.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.interface-3.6.7-py2.6-macosx-10.6-universal.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Unidecode-0.04.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.publisher-3.12.6-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.i18n-3.7.4-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.component-3.9.5-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.security-3.7.4-py2.6-macosx-10.6-universal.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.proxy-3.6.1-py2.6-macosx-10.6-universal.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.location-3.9.0-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.exceptions-3.6.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.event-3.5.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.contenttype-3.5.5-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.configuration-3.7.4-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.browser-1.3-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.schema-3.7.1-py2.6.egg',
+  '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/pytz-2011g-py2.6.egg',
+  ]
+
+import zettwerk.i18nduder.duder
+
+if __name__ == '__main__':
+    zettwerk.i18nduder.duder.main()

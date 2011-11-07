@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:kss="http://namespaces.zope.org/kss"
+    >
+
+    <kss:commandset
+        name='atvalidation'
+        for="plone.app.kss.interfaces.IPloneKSSView"
+        provides=".interfaces.IValidationCommands"
+        class=".validation.ValidationCommands"
+        />
+
+</configure>

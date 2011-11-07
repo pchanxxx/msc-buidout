@@ -1,0 +1,16 @@
+README.txt
+setup.cfg
+setup.py
+docs/HISTORY.txt
+zettwerk/__init__.py
+zettwerk.i18nduder.egg-info/PKG-INFO
+zettwerk.i18nduder.egg-info/SOURCES.txt
+zettwerk.i18nduder.egg-info/dependency_links.txt
+zettwerk.i18nduder.egg-info/entry_points.txt
+zettwerk.i18nduder.egg-info/namespace_packages.txt
+zettwerk.i18nduder.egg-info/not-zip-safe
+zettwerk.i18nduder.egg-info/requires.txt
+zettwerk.i18nduder.egg-info/top_level.txt
+zettwerk/i18nduder/__init__.py
+zettwerk/i18nduder/commands.py
+zettwerk/i18nduder/duder.py

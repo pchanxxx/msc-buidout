@@ -1,0 +1,176 @@
+Metadata-Version: 1.0
+Name: plone.app.folder
+Version: 1.0.4
+Summary: Integration package for `plone.folder` into Plone
+Home-page: http://pypi.python.org/pypi/plone.app.folder/
+Author: Plone Foundation
+Author-email: plone-developers@lists.sourceforge.net
+License: GPL version 2
+Description: 
+        
+        Overview
+        --------
+        
+        This package provides base classes for folderish `Archetypes`_ /
+        `ATContentTypes`_ content types based on `B-trees`_, a.k.a. "large folders"
+        in Plone_.  Storing content in such folders provides significant
+        `performance benefits`_ over regular folders.
+        
+        .. _`Archetypes`: http://pypi.python.org/pypi/Products.Archetypes/
+        .. _`ATContentTypes`: http://pypi.python.org/pypi/Products.ATContentTypes/
+        .. _`B-trees`: http://en.wikipedia.org/wiki/B-tree
+        .. _`Plone`: http://plone.org/
+        .. _`performance benefits`: http://plone.org/products/plone/roadmap/191
+        
+        The package only contains the integration layer for the base class provided
+        by `plone.folder`_, however.  Please see there for more detailed information.
+        
+        .. _`plone.folder`: http://pypi.python.org/pypi/plone.folder/
+        
+        Caveats
+        -------
+        
+        If you are using `plone.app.folder` in your product you may notice that
+        PloneTestCase will fail to setup a Plone site for your functional tests.
+        This can be resolved by adding this line to your functional test source::
+        
+        from plone.app.folder.tests import bbb
+        
+        
+        Changelog
+        =========
+        
+        1.0.4 - 2011-01-03
+        ------------------
+        
+        - Depend on ``Products.CMFPlone`` instead of ``Plone``.
+        [elro]
+        
+        1.0.3 - 2010-11-06
+        ------------------
+        
+        - Next/previous folder adapter should not return non-contentish objects,
+        such as local workflow policies as example.
+        This fixes http://dev.plone.org/plone/ticket/11234.
+        [thomasdesvenain]
+        
+        1.0.2 - 2010-08-08
+        ------------------
+        
+        - Adjust tests to work with Zope 2.13 and avoid deprecation warnings.
+        [hannosch]
+        
+        - Show the next **viewable** item in next/previous
+        viewlet/link, as the behaviour was in Plone 3.
+        This fixes http://dev.plone.org/plone/ticket/10309.
+        [mr_savage]
+        
+        1.0.1 - 2010-07-18
+        ------------------
+        
+        - Update license to GPL version 2 only.
+        [hannosch]
+        
+        1.0 - 2010-07-07
+        ----------------
+        
+        * Moved migration logic into the BTreeMigrationView to allow subclasses to
+        override part of the logic.
+        [hannosch]
+        
+        * Remove the overly noisy migration report per folder.
+        [hannosch]
+        
+        1.0b7 - Released June 3, 2010
+        -----------------------------
+        
+        * Updated tests to not rely on the existence of the Large Plone Folder type,
+        which was removed for Plone 4.
+        [davisagli]
+        
+        1.0b6 - Released May 2, 2010
+        ----------------------------
+        
+        * Nogopip vs. Acquisition take two - not all folders have a getOrdering
+        method, so we need to avoid acquiring it.
+        [hannosch]
+        
+        
+        1.0b5 - Released April 6, 2010
+        ------------------------------
+        
+        * Match ``getObjectPositionInParent`` behavior and handle unordered folders
+        inside ordered folders shown in the navigation tree at the same time.
+        [hannosch]
+        
+        
+        1.0b4 - Released March 6, 2010
+        ------------------------------
+        
+        * Don't try to store an acquisition-wrapped catalog on the positional index.
+        [hannosch]
+        
+        
+        1.0b3 - Released February 18, 2010
+        ----------------------------------
+        
+        * Only apply monkey patch for `reindexOnReorder` on Plone 3.x & shortcut
+        indexing completely if the fake index has been installed.
+        [witsch]
+        
+        * Replace monkey patch for `Catalog._getSortIndex` with a fake index that
+        can sort search results according to their position in the container.
+        [witsch]
+        
+        * Add optimization for sorting results by folder position for the usual
+        "all results in one folder" case.
+        [witsch]
+        
+        * Add adapter for previous/next support that doesn't need the catalog.
+        [witsch]
+        
+        * Remove `getObjPositionInParent` catalog index and use a sort index based
+        on the folder's order information instead.
+        [witsch]
+        
+        
+        1.0b2 - Released January 28, 2010
+        ---------------------------------
+        
+        * Add `IATBTreeFolder` to `implements` list of `ATFolder` replacement.
+        [thet]
+        
+        
+        1.0b1 - Released Nov 15, 2009
+        -----------------------------
+        
+        * Copy the `index_html` method from `ATContentTypes` to better support WebDAV.
+        [davisagli]
+        
+        * Add in-place migration code.
+        [witsch]
+        
+        * Work around imports no longer present in Plone 4.0.
+        [witsch]
+        
+        * (Briefly) document the `plone.app.folder.tests.bbb` usage.
+        [wichert]
+        
+        
+        1.0a1 - Released May 7, 2009
+        ----------------------------
+        
+        * Initial release as factored out from `plone.folder`.
+        [witsch]
+        
+Keywords: folder btree order plone archetypes atcontenttypes
+Platform: Any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

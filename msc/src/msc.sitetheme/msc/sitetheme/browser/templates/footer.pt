@@ -1,0 +1,27 @@
+<div id="portal-footer" class="rounded" metal:define-macro="portal_footer" i18n:domain="plone">
+<div id="footer-content-wrapper">
+<div id="footer-content" tal:define="pmail string:freiburg@msc.de">
+    <div id="footer-content-left">
+            MSC Freiburg GmbH &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+			Munzinger Str. 3 &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+			79111 Freiburg i.Br.<br />
+			Tel.: +49 (761) 8819-0 &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+			Fax: +49 (761) 8819-877 &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+			<script type="text/javascript">document.write(
+"R-Znvy".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+</script>: <a href="" tal:replace="structure python:here.spamProtect(pmail)" /><br />
+			Copyright &copy; 2009 MSC &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+			All Rights reserved &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+			<a href="" tal:attributes="href string:${here/portal_url}/impressum">
+			    Impressum</a> &nbsp;&nbsp;&#124;&nbsp;&nbsp;
+			<a href="" tal:attributes="href string:${here/portal_url}/agb">
+			    AGB</a>
+	</div>
+	<div id="footer-content-right">
+		Competence in Solutions
+	</div>
+			<div class="visualClear"><!-- --></div>
+</div>
+<div id="footer-bottom"><!-- --></div>
+</div>
+</div>

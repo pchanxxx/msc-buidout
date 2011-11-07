@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:meta="http://namespaces.zope.org/meta">
+
+  <include package="zope.component" file="meta.zcml" />
+
+  <!-- BBB this include is for backwards-compatibility after directives were
+       moved from here. -->
+  <include package="zope.security" file="meta.zcml" />
+
+</configure>

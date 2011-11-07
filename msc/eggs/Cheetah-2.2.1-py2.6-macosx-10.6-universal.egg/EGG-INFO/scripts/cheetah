@@ -1,0 +1,3 @@
+#!/Users/anjaradtke/vw-devel/msc/bin/python
+from Cheetah.CheetahWrapper import CheetahWrapper
+CheetahWrapper().main()

@@ -1,0 +1,774 @@
+Metadata-Version: 1.0
+Name: jarn.mkrelease
+Version: 3.2
+Summary: Build and distribute Python eggs in one simple step
+Home-page: http://www.jarn.com/
+Author: Jarn AS
+Author-email: info@jarn.com
+License: BSD
+Description: ==============
+        jarn.mkrelease
+        ==============
+        ---------------------------------------------------
+        Build and distribute Python eggs in one simple step
+        ---------------------------------------------------
+        
+        **mkrelease** is a no-frills Python egg releaser. It is designed to take
+        the cumber out of building and distributing Python eggs.
+        
+        Motivation
+        ==========
+        
+        Here at Jarn we use zc.buildout and pinned egg versions for
+        customer deployments. This means that for every update, we have to make
+        proper egg releases of all packages involved.
+        
+        Turns out it's quite a bit of work to put a new egg on a
+        distribution server! After preparing a package for release (update
+        version strings, etc) we typically have to:
+        
+        1. Commit modified files.
+        
+        2. Tag the release.
+        
+        3. Package up an egg.
+        
+        4. Distribute the egg via scp or upload it to an index server.
+        
+        Now multiply by the number of packages waiting for release, and the moment of
+        *I gotta script this* approaches at warp 9.
+        
+        Installation
+        ============
+        
+        mkrelease requires Python 2.6 or 2.7. Use
+        ``easy_install jarn.mkrelease`` to install the ``mkrelease`` script.
+        Then put it on your system PATH by e.g. symlinking it to ``/usr/local/bin``.
+        
+        mkrelease is known to work with the 0.6 series of setuptools
+        and distribute.
+        
+        Usage
+        =====
+        
+        ``mkrelease [options] [scm-url [rev]|scm-sandbox]``
+        
+        Options
+        =======
+        
+        ``-C, --no-commit``
+        Do not commit modified files from the sandbox.
+        
+        ``-T, --no-tag``
+        Do not tag the release in SCM.
+        
+        ``-S, --no-upload``
+        Do not upload the release to dist-location.
+        
+        ``-n, --dry-run``
+        Dry-run; equivalent to ``-CTS``.
+        
+        ``--svn, --hg, --git``
+        Select the SCM type. Only required if the SCM type
+        cannot be guessed from the argument.
+        
+        ``-d dist-location, --dist-location=dist-location``
+        An scp destination specification, or an index server
+        configured in ``~/.pypirc``, or an alias name for either.
+        This option may be specified more than once.
+        
+        ``-s, --sign``
+        Sign the release with GnuPG.
+        
+        ``-i identity, --identity=identity``
+        The GnuPG identity to sign with.
+        
+        ``-p, --push``
+        Push sandbox modifications upstream.
+        
+        ``-e, --develop``
+        Allow version number extensions (i.e. don't ignore
+        respective setup.cfg options.)
+        
+        ``-b, --binary``
+        Release a binary (bdist) egg.
+        
+        ``-q, --quiet``
+        Suppress output of setuptools commands.
+        
+        ``-l, --list-locations``
+        List known dist-locations and exit.
+        
+        ``-h, --help``
+        Print the help message and exit.
+        
+        ``-v, --version``
+        Print the version string and exit.
+        
+        ``scm-url``
+        The URL of a remote SCM repository. The optional ``rev`` argument
+        specifies a branch or tag to check out.
+        
+        ``scm-sandbox``
+        A local SCM sandbox. Defaults to the current working
+        directory.
+        
+        Examples
+        ========
+        
+        Release my.package and upload it to PyPI::
+        
+        $ mkrelease -d pypi src/my.package
+        
+        Release my.package and upload it via scp to the jarn.com server::
+        
+        $ mkrelease -d jarn.com:/var/dist/public src/my.package
+        
+        Release my.package using the repository URL instead of a local working copy::
+        
+        $ mkrelease -d pypi https://svn.jarn.com/public/my.package/trunk
+        
+        Release a development egg of my.package (while suppressing setuptools output)::
+        
+        $ mkrelease -qed jarn.com:/var/dist/public src/my.package
+        
+        Configuration
+        =============
+        
+        mkrelease reads available index servers from the distutils configuration
+        file ``~/.pypirc``. This file must contain your PyPI account information::
+        
+        [distutils]
+        index-servers =
+        pypi
+        
+        [pypi]
+        username = fred
+        password = secret
+        
+        mkrelease also reads its own configuration file ``~/.mkrelease``.
+        Here's an example::
+        
+        [mkrelease]
+        distbase =
+        distdefault = public
+        
+        [aliases]
+        public =
+        jarn.com:/var/dist/public
+        customerA =
+        jarn.com:/var/dist/customerA
+        world =
+        public
+        pypi
+        
+        (Note that ``pypi`` refers to the index server `pypi` as configured in
+        ``~/.pypirc``.)
+        
+        Armed with this configuration we can shorten example 2 to::
+        
+        $ mkrelease -d public src/my.package
+        
+        And because ``public`` is the default location, we can omit ``-d`` entirely::
+        
+        $ mkrelease src/my.package
+        
+        Working with SCP
+        ================
+        
+        The simplest distribution location is a server directory shared through
+        Apache. Releasing an egg means scp-ing it to the appropriate place on the
+        server::
+        
+        $ mkrelease -d jarn.com:/var/dist/public src/my.package
+        
+        We have a distribution point for every project, so customer A does not
+        see customer B's releases::
+        
+        $ mkrelease -d jarn.com:/var/dist/customerB src/my.package
+        
+        Typing the full destination every time is tedious, even setting up an alias
+        for each and every customer is, so we configure distbase instead::
+        
+        [mkrelease]
+        distbase = jarn.com:/var/dist
+        distdefault = public
+        
+        [aliases]
+        world =
+        public
+        pypi
+        
+        The distbase is prepended if an scp destination does not contain a
+        host part. We can now write::
+        
+        $ mkrelease -d public src/my.package
+        $ mkrelease -d customerB src/my.package
+        
+        Working with Index Servers
+        ==========================
+        
+        Another way of distributing Python eggs is by uploading them to dedicated
+        index servers, notably PyPI. Given the ``~/.pypirc`` file from above
+        we can release on PyPI by typing::
+        
+        $ mkrelease -d pypi src/my.package
+        
+        Index servers are not limited to PyPI though.
+        For example, in the Plone world it is common practice to upload packages to
+        `plone.org`_ as well as to PyPI.
+        
+        .. _`plone.org`: http://plone.org/products
+        
+        We extend our ``~/.pypirc`` to add a second index server::
+        
+        [distutils]
+        index-servers =
+        pypi
+        ploneorg
+        
+        [pypi]
+        username = fred
+        password = secret
+        
+        [ploneorg]
+        repository = http://plone.org/products
+        username = fred
+        password = secret
+        
+        This allows us to write::
+        
+        $ mkrelease -d ploneorg src/my.package
+        
+        The ``-d`` flag may be specified more than once::
+        
+        $ mkrelease -d pypi -d ploneorg src/my.package
+        
+        Alternatively, we can group the servers by defining an alias in
+        ``~/.mkrelease``::
+        
+        [aliases]
+        plone =
+        pypi
+        ploneorg
+        
+        And type::
+        
+        $ mkrelease -d plone src/my.package
+        
+        Note: Setuptools rebuilds the egg for every index server it uploads it to.
+        This means that MD5 sums and GnuPG signatures will differ between servers.
+        If this is not what you want, upload to only one server and distribute from
+        there by other means.
+        
+        Releasing a Tag
+        ===============
+        
+        Release my.package from an existing tag::
+        
+        $ mkrelease -T https://svn.jarn.com/public/my.package/tags/1.0
+        
+        With Mercurial and Git we can use the second argument to specify the tag::
+        
+        $ mkrelease -T ssh://git@github.com/Jarn/my.package 1.0
+        
+        Using GnuPG
+        ===========
+        
+        Release my.package and sign the archive with GnuPG::
+        
+        $ mkrelease -s -i fred@bedrock.com src/my.package
+        
+        The ``-i`` flag is optional, and GnuPG will pick your default
+        key if not given. In addition, defaults for ``-s`` and ``-i`` can be
+        configured in ``~/.pypirc``::
+        
+        [distutils]
+        index-servers =
+        pypi
+        
+        [pypi]
+        username = fred
+        password = secret
+        sign = yes
+        identity = fred@bedrock.com
+        
+        Requirements
+        ============
+        
+        The following commands must be available on the system PATH (you only need
+        what you plan to use):
+        
+        * svn
+        
+        * hg
+        
+        * git
+        
+        * scp
+        
+        * gpg
+        
+        Limitations
+        ===========
+        
+        Subversion
+        ----------
+        
+        The release tag can only be created if the repository follows one of
+        these layouts:
+        
+        * The standard Subversion layout: ``my.package/trunk``,
+        ``my.package/branches``, and ``my.package/tags``.
+        
+        * The singular-form layout variant: ``my.package/trunk``,
+        ``my.package/branch``, and ``my.package/tag``.
+        
+        Git
+        ---
+        
+        Git's short-hand notation for ``ssh://`` URLs is not supported.
+        
+        
+        Changelog
+        =========
+        
+        3.2 - 2011-10-21
+        ----------------
+        
+        - Fix the environment passed to subprocesses; Mercurial did not appreciate
+        the mangled PYTHONPATH.
+        [stefan]
+        
+        - Allow to specify the branch or tag to check out from Git and Mercurial
+        repositories.
+        [stefan]
+        
+        - Adapt to new status output in Subversion 1.6.
+        [stefan]
+        
+        - Always include ``distdefault`` in list-locations.
+        [stefan]
+        
+        - Detect Subversion repos from ``file://`` URLs.
+        [stefan]
+        
+        - Detect bare Git repos from ``file://`` URLs.
+        [stefan]
+        
+        3.1 - 2011-07-19
+        ----------------
+        
+        - Pass the PYTHONPATH to subprocesses so mkrelease works in zc.buildout
+        environments.
+        [stefan]
+        
+        - Improve SCM detection in situations where one or more SCMs are nested.
+        [stefan]
+        
+        - Add support for relative ``file:`` URLs.
+        [stefan]
+        
+        - Depend on lazy_ instead of carrying a local implementation.
+        [stefan]
+        
+        .. _lazy: http://pypi.python.org/pypi/lazy
+        
+        3.0.10 - 2011-07-07
+        -------------------
+        
+        - Add -l option to list known dist-locations (i.e. servers and aliases).
+        [stefan]
+        
+        - Drop support for server URLs as dist-locations. Server URLs are
+        not unique.
+        [stefan]
+        
+        - Update the Mercurial test repository so tagging tests don't fail
+        under Mercurial 1.8.
+        [stefan]
+        
+        3.0.9 - 2010-12-31
+        ------------------
+        
+        - Rename ``[defaults]`` configuration file section to ``[mkrelease]``.
+        [stefan]
+        
+        - Various internal code cleanups.
+        [stefan]
+        
+        3.0.8 - 2010-08-13
+        ------------------
+        
+        - Avoid underscores in dependency names.
+        [stefan]
+        
+        - Handle return code changes in Mercurial 1.6.
+        [stefan]
+        
+        3.0.7 - 2010-07-07
+        ------------------
+        
+        - Improve documentation and error messages.
+        [stefan]
+        
+        3.0.5 - 2010-03-23
+        ------------------
+        
+        - Allow per-server configuration of -s and -i defaults.
+        [stefan]
+        
+        - Support the codespeak.net Subversion repository layout.
+        [stefan]
+        
+        3.0.4 - 2010-03-16
+        ------------------
+        
+        - Status checks didn't use the same path restrictions as commits
+        (Mercurial and Git.)
+        [stefan]
+        
+        3.0.3 - 2010-03-16
+        ------------------
+        
+        - Change how we check for existing tags in Subversion repositories.
+        [stefan]
+        
+        - Make sandbox-status checks more robust in all three SCMs.
+        [stefan]
+        
+        3.0.2 - 2010-03-12
+        ------------------
+        
+        - Add support for Git 1.7.
+        [stefan]
+        
+        3.0.1 - 2010-02-07
+        ------------------
+        
+        - Stop when -d pypi is given but no configuration can be found.
+        [stefan]
+        
+        - Use ``gnu_getopt`` to parse the command line.
+        [stefan]
+        
+        3.0 - 2010-01-15
+        ----------------
+        
+        - Switch to -n for dry-run to be consistent with other tools.
+        [stefan]
+        
+        - Rename --skip-* long options to --no-* for the same reason.
+        [stefan]
+        
+        - Fix a bug in Mercurial and Git sandbox detection.
+        [stefan]
+        
+        - Prepare for standalone distutils.
+        [stefan]
+        
+        2.0.4 - 2010-01-10
+        ------------------
+        
+        - Improve Git support to handle remotes other than origin.
+        [stefan]
+        
+        - Fix SCM detection in ``ssh://`` URLs.
+        [stefan]
+        
+        2.0.3 - 2010-01-03
+        ------------------
+        
+        - Add -b option for releasing binary eggs.
+        [stefan]
+        
+        - Don't choke on dirty sandboxes when dry-running.
+        [stefan]
+        
+        2.0.2 - 2009-08-29
+        ------------------
+        
+        - Filter meta files (``.svn*``, ``.hg*``, ``.git*``) and never include
+        them in releases.
+        [stefan]
+        
+        - Make sure to clean up all temporary files.
+        [stefan]
+        
+        2.0.1 - 2009-07-24
+        ------------------
+        
+        - Fixed bug which could cause mkrelease to issue eggs with faulty manifest
+        files (Symptom: data files not installed).
+        [stefan]
+        
+        - The -e flag now implies -T. We never want to tag a development release.
+        [stefan]
+        
+        2.0 - 2009-07-16
+        ----------------
+        
+        - Allow command line options to appear after the argument. As in:
+        ``mkrelease src/my.package -q -d pypi``.
+        [stefan]
+        
+        2.0b2 - 2009-07-09
+        ------------------
+        
+        - Improve user feedback in the SCM-detection part.
+        [stefan]
+        
+        - Document the -e flag.
+        [stefan]
+        
+        - Drop global configuration file for YAGNI.
+        [stefan]
+        
+        - Allow to set default values for -s and -i in ~/.mkrelease.
+        [stefan]
+        
+        2.0b1 - 2009-07-03
+        ------------------
+        
+        - By default, ignore all version number extensions (dev-r12345)
+        that may be configured in setup.cfg. Passing the -e flag
+        disables this safeguard.
+        [witsch, stefan]
+        
+        - Delete any existing signature file before signing anew. This keeps
+        GnuPG from complaining about existing (but left-over) files.
+        [stefan]
+        
+        2.0a2 - 2009-06-27
+        ------------------
+        
+        - Drop configurable Python and use sys.executable. This also means we
+        now require Python 2.6.
+        [stefan]
+        
+        - Force setuptools to only use file-finders for the selected SCM type.
+        This is required to support multi-SCM sandboxes (think git-svn).
+        [stefan]
+        
+        - Treat Subversion sandboxes just like the others and avoid the
+        temporary checkout step.
+        [stefan]
+        
+        - Remove the -u flag for being pointless.
+        [stefan]
+        
+        2.0a1 - 2009-06-14
+        ------------------
+        
+        - Added support for Mercurial and Git.
+        [stefan]
+        
+        - Added 250+ unit tests.
+        [stefan]
+        
+        1.0.2 - 2009-06-13
+        ------------------
+        
+        - Documented long options.
+        [stefan]
+        
+        - Print a "Tagging ..." line before tagging.
+        [stefan]
+        
+        1.0 - 2009-05-14
+        ----------------
+        
+        - Print help and version to stdout, not stderr.
+        [stefan]
+        
+        1.0b4 - 2009-04-30
+        ------------------
+        
+        - Since distutils commands may return 0, successful or not, we must
+        check their output for signs of failure.
+        [stefan]
+        
+        - Allow to pass argument list to ``main()``.
+        [stefan]
+        
+        1.0b3 - 2009-03-23
+        ------------------
+        
+        - No longer depend on grep.
+        [stefan]
+        
+        - Use subprocess.Popen instead of os.system and os.popen.
+        [stefan]
+        
+        - Protect against infinite alias recursion.
+        [stefan]
+        
+        - Drop -z option and always create zip files from now on.
+        [stefan]
+        
+        1.0b2 - 2009-03-19
+        ------------------
+        
+        - Checkin everything that's been modified, not just "relevant" files.
+        [stefan]
+        
+        - Expand aliases recursively.
+        [stefan]
+        
+        1.0b1 - 2009-03-18
+        ------------------
+        
+        - The distbase and distdefault config file options no longer have
+        default values.
+        [stefan]
+        
+        - Read index servers from ~/.pypirc and allow them to be used with -d.
+        [stefan]
+        
+        - The -d option may be specified more than once.
+        [stefan]
+        
+        - Dropped -p option. Use -d pypi instead.
+        [stefan]
+        
+        - Dropped -c option. If your have non-standard SVN repositories you must
+        tag by hand.
+        [stefan]
+        
+        0.19 - 2009-02-23
+        -----------------
+        
+        - Absolute-ize the temp directory path.
+        [stefan]
+        
+        0.18 - 2009-01-26
+        -----------------
+        
+        - Include README.txt and CHANGES.txt in long_description.
+        [stefan]
+        
+        - Rid unused imports and locals.
+        [stefan]
+        
+        0.17 - 2009-01-23
+        -----------------
+        
+        - Add -c option to enable codespeak support. The codespeak.net repository
+        uses ``branch`` and ``tag`` instead of ``branches`` and ``tags``.
+        [gotcha, stefan]
+        
+        0.16 - 2009-01-13
+        -----------------
+        
+        - Fold regex construction into find and make find a method.
+        [stefan]
+        
+        - Update README.txt.
+        [stefan]
+        
+        0.15 - 2009-01-13
+        -----------------
+        
+        - Support for reading default options from a config file.
+        [fschulze, stefan]
+        
+        0.14 - 2009-01-08
+        -----------------
+        
+        - Add -s and -i options for signing PyPI uploads with GnuPG.
+        [stefan]
+        
+        - Stop execution after any failing step.
+        [stefan]
+        
+        0.13 - 2009-01-05
+        -----------------
+        
+        - Stop execution when the checkin step fails.
+        [stefan]
+        
+        0.12 - 2009-01-02
+        -----------------
+        
+        - setup.cfg may not exist.
+        [stefan]
+        
+        0.11 - 2008-12-02
+        -----------------
+        
+        - Add setup.cfg to list of files we check in.
+        [stefan]
+        
+        0.10 - 2008-10-21
+        -----------------
+        
+        - Don't capitalize GetOptError messages.
+        [stefan]
+        
+        0.9 - 2008-10-16
+        ----------------
+        
+        - Add -v option to print the script version.
+        [stefan]
+        
+        0.8 - 2008-10-16
+        ----------------
+        
+        - Lift restriction where only svn trunk could be released.
+        [stefan]
+        
+        0.7 - 2008-10-09
+        ----------------
+        
+        - Fix PyPI upload which must happen on the same command line as sdist.
+        [stefan]
+        
+        0.6 - 2008-10-08
+        ----------------
+        
+        - Update README.txt.
+        [stefan]
+        
+        0.5 - 2008-10-08
+        ----------------
+        
+        - Also locate and checkin HISTORY.txt to support ZopeSkel'ed eggs.
+        [stefan]
+        
+        0.4 - 2008-10-08
+        ----------------
+        
+        - Use svn checkout instead of svn export because it makes a difference
+        to setuptools.
+        [stefan]
+        
+        - Add -p option for uploading to PyPI instead of dist-location.
+        [stefan]
+        
+        0.3 - 2008-10-06
+        ----------------
+        
+        - Also locate and checkin version.txt.
+        [stefan]
+        
+        0.2 - 2008-10-01
+        ----------------
+        
+        - Add -z option to create zip archives instead of the default tar.gz.
+        [stefan]
+        
+        0.1 - 2008-10-01
+        ----------------
+        
+        - Initial release
+        [stefan]
+        
+        
+Keywords: release python eggs
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2

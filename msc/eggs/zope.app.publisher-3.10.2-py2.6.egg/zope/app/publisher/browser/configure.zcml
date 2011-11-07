@@ -1,0 +1,34 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <include package="zope.browserresource" />
+  <include package="zope.ptresource" />
+  <include package="zope.browsermenu" />
+
+<utility
+    name="Browser Skins"
+    component=".vocabulary.BrowserSkinsVocabulary"
+    />
+
+<!-- Management view selector -->
+<!-- Get first accessible item from zmi_views menu -->
+<browser:page
+    for="*"
+    name="SelectedManagementView.html"
+    permission="zope.Public"
+    class=".managementviewselector.ManagementViewSelector"
+    allowed_interface="zope.publisher.interfaces.browser.IBrowserPublisher"
+    />
+
+<!-- Make manage an alias for same -->
+<browser:page
+    for="*"
+    name="manage"
+    permission="zope.ManageContent"
+    class=".managementviewselector.ManagementViewSelector"
+    allowed_interface="zope.publisher.interfaces.browser.IBrowserPublisher"
+    />
+
+</configure>

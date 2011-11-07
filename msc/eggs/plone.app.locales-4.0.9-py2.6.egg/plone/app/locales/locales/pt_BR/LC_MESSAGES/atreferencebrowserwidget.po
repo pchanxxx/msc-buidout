@@ -1,0 +1,73 @@
+# Translation of atreferencebrowserwidget.pot to Portuguese (Brazil)
+# Andre Nogueira <andre@simplesconsultoria.com.br>, 2011.
+# Érico Andrei <erico@simplesconsultoria.com.br>, 2008.
+# Luis Flavio Rocha <lflrocha@gmail.com>, 2007.
+# Dorneles Treméa <dorneles@x3ng.com.br>, 2003-2006.
+# Fabiano Weimar dos Santos (Xiru) <xiru@xiru.org>, 2002-2005.
+# Sidnei da Silva <sidnei@plone.org>, 2002-2003.
+msgid ""
+msgstr ""
+"Project-Id-Version: ATReferenceBrowserWidget\n"
+"POT-Creation-Date: 2011-02-24 14:48+0000\n"
+"PO-Revision-Date: 2011-02-25 11:38-0300\n"
+"Last-Translator: Andre Nogueira <andre@simplesconsultoria.com.br>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: pt-br\n"
+"Language-Name: Português do Brasil\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: atreferencebrowserwidget\n"
+
+#. Default: "Add..."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:189
+msgid "label_add"
+msgstr "Adicionar..."
+
+#. Default: "(Directory: ${directory})"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:48
+msgid "label_directory"
+msgstr "(Diretório: ${directory})"
+
+#. Default: "Go"
+#: archetypes/referencebrowserwidget/browser/popup.pt:118
+msgid "label_go"
+msgstr "Ir"
+
+#. Default: "No reference set. Click the add button to select."
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:136
+msgid "label_no_reference_set"
+msgstr "Nenhuma referência definida. Clique no botão 'Procurar' para selecionar."
+
+#. Default: "Clear reference"
+#: archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:195
+msgid "label_remove_reference"
+msgstr "Remover referência"
+
+#. Default: "History"
+#: archetypes/referencebrowserwidget/browser/popup.pt:113
+msgid "referencebrowser_history"
+msgstr "Histórico"
+
+#. Default: "No items found."
+#: archetypes/referencebrowserwidget/browser/popup.pt:152
+msgid "referencebrowser_no_items_found"
+msgstr "Nenhum item encontrado."
+
+#. Default: "Search index"
+#: archetypes/referencebrowserwidget/browser/popup.pt:53
+msgid "referencebrowser_search_index_label"
+msgstr "Índice da busca"
+
+#. Default: "Added"
+#: archetypes/referencebrowserwidget/browser/popup.pt:29
+msgid "referencebrowser_text_added_reference"
+msgstr "Adicionado"
+
+#. Default: "Removed"
+#: archetypes/referencebrowserwidget/browser/popup.pt:37
+msgid "referencebrowser_text_removed_reference"
+msgstr "Removido"
+

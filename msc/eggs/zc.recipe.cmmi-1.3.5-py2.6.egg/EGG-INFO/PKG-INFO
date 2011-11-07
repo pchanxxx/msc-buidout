@@ -1,0 +1,631 @@
+Metadata-Version: 1.0
+Name: zc.recipe.cmmi
+Version: 1.3.5
+Summary: ZC Buildout recipe for configure/make/make install
+Home-page: http://pypi.python.org/pypi/zc.recipe.cmmi
+Author: Jim Fulton
+Author-email: jim@zope.com
+License: ZPL 2.1
+Description: ************************************************************
+        Recipe installing a download via configure/make/make install
+        ************************************************************
+        
+        The configure-make-make-install recipe automates installation of
+        configure-based source distribution into buildouts.
+        
+        .. contents::
+        
+        
+        SVN version:
+        
+        <svn://svn.zope.org/repos/main/zc.recipe.cmmi/trunk#egg=zc.recipe.cmmi-dev>
+        
+        
+        Options
+        *******
+        
+        url
+        The URL of a source archive to download
+        
+        configure-command
+        The name of the configure script.
+        
+        The option defaults to ``./configure``.
+        
+        configure-options
+        Basic configure options.
+        
+        Defaults to a ``--prefix`` option that points to the part directory.
+        
+        extra_options
+        A string of extra options to pass to configure in *addition to* the
+        base options.
+        
+        environment
+        Optional environment variable settings of the forme NAME=VALUE.
+        
+        Newlines are ignored. Spaces may be included in environment values
+        as long as they can't be mistaken for environment settings.  So::
+        
+        environment = FOO=bar
+        baz
+        
+        Sets the environment variable FOO, but::
+        
+        environment = FOO=bar xxx=baz
+        
+        Sets 2 environment values, FOO and xxx.
+        
+        patch
+        The name of an optional patch file to apply to the distribution.
+        
+        patch_options
+        Options to supply to the patch command (if a patch file is used).
+        
+        This defaults to ``-p0``
+        
+        shared
+        Share the build accross buildouts.
+        
+        autogen
+        The name of a script to run to generate a configure script.
+        
+        source-directory-contains
+        The name of a file in the distribution's source directory.
+        
+        This is used by the recipe to determine if it has found the source
+        directory. It defaults top "configure".
+        
+        
+        .. note::
+        
+        This recipe is not expected to work in a Microsoft Windows environment.
+        
+        Release History
+        ***************
+        
+        1.3.5 (2011-08-06)
+        ==================
+        
+        - Fixed: Spaces weren't allowed in environment variables.
+        
+        - Fixed: Added missing option reference documentation.
+        
+        
+        1.3.4 (2011-01-18)
+        ==================
+        
+        - Fixed a bug in location book-keeping that caused shared builds to be deleted
+        from disk when a part didn't need them anymore. (#695977)
+        
+        - Made tests pass with both zc.buildout 1.4 and 1.5, lifted the upper version
+        bound on zc.buildout. (#695732)
+        
+        1.3.3 (2010-11-10)
+        ==================
+        
+        - Remove the temporary build directory when cmmi succeeds.
+        
+        - Specify that the zc.buildout version be <1.5.0b1, as the recipe is
+        currently not compatible with zc.buildout 1.5.
+        
+        1.3.2 (2010-08-09)
+        ==================
+        
+        - Remove the build directory for a shared build when the source cannot be
+        downloaded.
+        
+        - Declared a test dependency on zope.testing.
+        
+        
+        1.3.1 (2009-09-10)
+        ==================
+        
+        - Declare dependency on zc.buildout 1.4 or later. This dependency was introduced
+        in version 1.3.
+        
+        
+        1.3 (2009-09-03)
+        ================
+        
+        - Use zc.buildout's download API. As this allows MD5 checking, added the
+        md5sum and patch-md5sum options.
+        
+        - Added options for changing the name of the configure script and
+        overriding the ``--prefix`` parameter.
+        
+        - Moved the core "configure; make; make install" command sequence to a
+        method that can be overridden in other recipes, to support packages
+        whose installation process is slightly different.
+        
+        1.2.1 (2009-08-12)
+        ==================
+        
+        Bug fix: keep track of reused shared builds.
+        
+        
+        1.2.0 (2009-05-18)
+        ==================
+        
+        Enabled using a shared directory for completed builds.
+        
+        1.1.6 (2009-03-17)
+        ==================
+        
+        Moved 'zc' package from root of checkout into 'src', to prevent testrunner
+        from finding eggs installed locally by buildout.
+        
+        Removed deprecations under Python 2.6.
+        
+        1.1.5 (2008-11-07)
+        ==================
+        
+        Added to the README.txt file a link to the SVN repository, so that Setuptools
+        can automatically find the development version when asked to install the
+        "-dev" version of zc.recipe.cmmi.
+        
+        Bugs Fixed
+        ----------
+        
+        Applied fix for bug #261367 i.e. changed open() of file being downloaded to
+        binary, so that errors like the following no longer occur under Windows.
+        
+        uncompress = self.decompress.decompress(buf)
+        error: Error -3 while decompressing: invalid distance too far back
+        
+        1.1.4 (2008-06-25)
+        ==================
+        
+        Add support to autogen configure files.
+        
+        1.1.3 (2008-06-03)
+        ==================
+        
+        Add support for updating the environment.
+        
+        1.1.2 (2008-02-28)
+        ==================
+        
+        Bugs Fixed
+        ----------
+        
+        Check if the `location` folder exists before creating it.
+        
+        After 1.1.0
+        ===========
+        
+        Added support for patches to be downloaded from a url rather than only using
+        patches on the filesystem
+        
+        1.1.0
+        =====
+        
+        Added support for:
+        
+        - download-cache: downloaded files are cached in the 'cmmi' subdirectory of
+        the cache cache keys are hashes of the url that the file was downloaded from
+        cache information recorded in the cache.ini file within each directory
+        
+        - offline mode: cmmi will not go online if the package is not in the cache
+        
+        - variable location: build files other than in the parts directory if required
+        
+        - additional logging/output
+        
+        1.0.2 (2007-06-03)
+        ==================
+        
+        Added support for patches.
+        
+        Bugs Fixed
+        ----------
+        
+        Tests fixed (buildout's output changed)
+        
+        1.0.1 (2006-11-22)
+        ==================
+        
+        Bugs Fixed
+        ----------
+        
+        Added missing zip_safe flag.
+        
+        1.0 (2006-11-22)
+        ================
+        
+        Initial release.
+        
+        Detailed Documentation
+        **********************
+        
+        We have an archive with a demo foo tar ball and publish it by http in order
+        to see  offline effects:
+        
+        >>> ls(distros)
+        -  bar.tgz
+        -  baz.tgz
+        -  foo.tgz
+        
+        >>> distros_url = start_server(distros)
+        
+        Let's update a sample buildout to installs it:
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... """ % distros_url)
+        
+        We used the url option to specify the location of the archive.
+        
+        If we run the buildout, the configure script in the archive is run.
+        It creates a make file which is also run:
+        
+        >>> print system('bin/buildout'),
+        Installing foo.
+        foo: Downloading http://localhost/foo.tgz
+        foo: Unpacking and configuring
+        configuring foo --prefix=/sample-buildout/parts/foo
+        echo building foo
+        building foo
+        echo installing foo
+        installing foo
+        
+        The recipe also creates the parts directory:
+        
+        >>> import os.path
+        >>> os.path.isdir(join(sample_buildout, "parts", "foo"))
+        True
+        
+        If we run the buildout again, the update method will be called, which
+        does nothing:
+        
+        >>> print system('bin/buildout'),
+        Updating foo.
+        
+        You can supply extra configure options:
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... extra_options = -a -b c
+        ... """ % distros_url)
+        
+        >>> print system('bin/buildout'),
+        Uninstalling foo.
+        Installing foo.
+        foo: Downloading http://localhost/foo.tgz
+        foo: Unpacking and configuring
+        configuring foo --prefix=/sample-buildout/parts/foo -a -b c
+        echo building foo
+        building foo
+        echo installing foo
+        installing foo
+        
+        The recipe sets the location option, which can be read by other
+        recipes, to the location where the part is installed:
+        
+        >>> cat('.installed.cfg')
+        ... # doctest: +ELLIPSIS
+        [buildout]
+        installed_develop_eggs =
+        parts = foo
+        <BLANKLINE>
+        [foo]
+        __buildout_installed__ = /sample_buildout/parts/foo
+        ...
+        extra_options = -a -b c
+        location = /sample_buildout/parts/foo
+        ...
+        
+        It may be necessary to set some environment variables when running configure
+        or make. This can be done by adding an environment statement:
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... environment =
+        ...   CFLAGS=-I/usr/lib/postgresql7.4/include
+        ... """ % distros_url)
+        
+        
+        >>> print system('bin/buildout'),
+        Uninstalling foo.
+        Installing foo.
+        foo: Downloading http://localhost/foo.tgz
+        foo: Unpacking and configuring
+        foo: Updating environment: CFLAGS=-I/usr/lib/postgresql7.4/include
+        configuring foo --prefix=/sample_buildout/parts/foo
+        echo building foo
+        building foo
+        echo installing foo
+        installing foo
+        
+        Sometimes it's necessary to patch the sources before building a package.
+        You can specify the name of the patch to apply and (optional) patch options:
+        
+        First of all let's write a patchfile:
+        
+        >>> import sys
+        >>> mkdir('patches')
+        >>> write('patches/config.patch',
+        ... """--- configure
+        ... +++ /dev/null
+        ... @@ -1,13 +1,13 @@
+        ...  #!%s
+        ...  import sys
+        ... -print "configuring foo", ' '.join(sys.argv[1:])
+        ... +print "configuring foo patched", ' '.join(sys.argv[1:])
+        ...
+        ...  Makefile_template = '''
+        ...  all:
+        ... -\techo building foo
+        ... +\techo building foo patched
+        ...
+        ...  install:
+        ... -\techo installing foo
+        ... +\techo installing foo patched
+        ...  '''
+        ...
+        ...  open('Makefile', 'w').write(Makefile_template)
+        ...
+        ... """ % sys.executable)
+        
+        Now let's create a buildout.cfg file. Note: If no patch option is beeing
+        passed, -p0 is appended by default.
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... patch = ${buildout:directory}/patches/config.patch
+        ... patch_options = -p0
+        ... """ % distros_url)
+        
+        >>> print system('bin/buildout'),
+        Uninstalling foo.
+        Installing foo.
+        foo: Downloading http://localhost/foo.tgz
+        foo: Unpacking and configuring
+        patching file configure
+        configuring foo patched --prefix=/sample_buildout/parts/foo
+        echo building foo patched
+        building foo patched
+        echo installing foo patched
+        installing foo patched
+        
+        It is possible to autogenerate the configure files:
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %s/bar.tgz
+        ... autogen = autogen.sh
+        ... """ % distros_url)
+        
+        >>> print system('bin/buildout'),
+        Uninstalling foo.
+        Installing foo.
+        foo: Downloading http://localhost//bar.tgz
+        foo: Unpacking and configuring
+        foo: auto generating configure files
+        configuring foo --prefix=/sample_buildout/parts/foo
+        echo building foo
+        building foo
+        echo installing foo
+        installing foo
+        
+        It is also possible to support configure commands other than "./configure":
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %s/baz.tgz
+        ... source-directory-contains = configure.py
+        ... configure-command = ./configure.py
+        ... configure-options =
+        ...     --bindir=bin
+        ... """ % distros_url)
+        
+        >>> print system('bin/buildout'),
+        Uninstalling foo.
+        Installing foo.
+        foo: Downloading http://localhost//baz.tgz
+        foo: Unpacking and configuring
+        configuring foo --bindir=bin
+        echo building foo
+        building foo
+        echo installing foo
+        installing foo
+        
+        When downloading a source archive or a patch, we can optionally make sure of
+        its authenticity by supplying an MD5 checksum that must be matched. If it
+        matches, we'll not be bothered with the check by buildout's output:
+        
+        >>> try: from hashlib import md5
+        ... except ImportError: from md5 import new as md5
+        >>> foo_md5sum = md5(open(join(distros, 'foo.tgz')).read()).hexdigest()
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... md5sum = %s
+        ... """ % (distros_url, foo_md5sum))
+        
+        >>> print system('bin/buildout'),
+        Uninstalling foo.
+        Installing foo.
+        foo: Downloading http://localhost/foo.tgz
+        foo: Unpacking and configuring
+        configuring foo --prefix=/sample_buildout/parts/foo
+        echo building foo
+        building foo
+        echo installing foo
+        installing foo
+        
+        But if the archive doesn't match the checksum, the recipe refuses to install:
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sbar.tgz
+        ... md5sum = %s
+        ... patch = ${buildout:directory}/patches/config.patch
+        ... """ % (distros_url, foo_md5sum))
+        
+        >>> print system('bin/buildout'),
+        Uninstalling foo.
+        Installing foo.
+        foo: Downloading http://localhost:20617/bar.tgz
+        While:
+        Installing foo.
+        Error: MD5 checksum mismatch downloading 'http://localhost/bar.tgz'
+        
+        Similarly, a checksum mismatch for the patch will cause the buildout run to be
+        aborted:
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... patch = ${buildout:directory}/patches/config.patch
+        ... patch-md5sum = %s
+        ... """ % (distros_url, foo_md5sum))
+        
+        >>> print system('bin/buildout'),
+        Installing foo.
+        foo: Downloading http://localhost:21669/foo.tgz
+        foo: Unpacking and configuring
+        While:
+        Installing foo.
+        Error: MD5 checksum mismatch for local resource at '/.../sample-buildout/patches/config.patch'.
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... patch = ${buildout:directory}/patches/config.patch
+        ... """ % (distros_url))
+        
+        If the build fails, the temporary directory where the tarball was unpacked
+        is logged to stdout, and left intact for debugging purposes.
+        
+        >>> write('patches/config.patch', "dgdgdfgdfg")
+        
+        >>> res =  system('bin/buildout')
+        >>> print res
+        Installing foo.
+        foo: Downloading http://localhost/foo.tgz
+        foo: Unpacking and configuring
+        patch unexpectedly ends in middle of line
+        foo: cmmi failed: /.../...buildout-foo
+        patch: **** Only garbage was found in the patch input.
+        While:
+        Installing foo.
+        <BLANKLINE>
+        An internal error occurred due to a bug in either zc.buildout or in a
+        recipe being used:
+        ...
+        SystemError: ('Failed', 'patch -p0 < /.../patches/config.patch')
+        <BLANKLINE>
+        
+        >>> import re
+        >>> import os.path
+        >>> import shutil
+        >>> path = re.search('foo: cmmi failed: (.*)', res).group(1)
+        >>> os.path.exists(path)
+        True
+        >>> shutil.rmtree(path)
+        
+        After a successful build, such temporary directories are removed.
+        
+        >>> import glob
+        >>> import tempfile
+        
+        >>> tempdir = tempfile.gettempdir()
+        >>> dirs = len(glob.glob(os.path.join(tempdir, '*buildout-foo')))
+        
+        >>> write('buildout.cfg',
+        ... """
+        ... [buildout]
+        ... parts = foo
+        ...
+        ... [foo]
+        ... recipe = zc.recipe.cmmi
+        ... url = %sfoo.tgz
+        ... """ % (distros_url,))
+        
+        >>> print system("bin/buildout")
+        Installing foo.
+        foo: Downloading http://localhost:21445/foo.tgz
+        foo: Unpacking and configuring
+        configuring foo --prefix=/sample_buildout/parts/foo
+        echo building foo
+        building foo
+        echo installing foo
+        installing foo
+        <BLANKLINE>
+        
+        >>> new_dirs = len(glob.glob(os.path.join(tempdir, '*buildout-foo')))
+        >>> dirs == new_dirs
+        True
+        
+        Download Cache
+        **************
+        The recipe supports use of a download cache in the same way
+        as zc.buildout. See downloadcache.txt for details
+        
+        Download
+        **********************
+        
+Keywords: zc.buildout buildout recipe cmmi configure make install
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Framework :: Buildout
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Software Distribution

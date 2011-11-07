@@ -1,0 +1,18 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="plone">
+<body>
+<div metal:define-macro="portlet">
+
+<dl class="portlet" id="portlet-simple">
+
+    <dd class="portletItem">
+		<img tal:attributes="src portal/++resource++msc.sitetheme.images/simple-portlet.jpg;
+                       		 alt string:Products we use" />
+    </dd>
+
+</dl>
+
+</div>
+</body>
+</html>

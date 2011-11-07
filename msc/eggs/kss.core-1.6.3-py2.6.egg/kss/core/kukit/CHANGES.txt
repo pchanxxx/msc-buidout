@@ -1,0 +1,174 @@
+Changelog for kukit.js
+======================
+
+1.6.2 (unreleased)
+------------------
+
+    - Use version 1.0.2 of base2-dom-fp.js.
+      Refs http://dev.plone.org/plone/ticket/11650
+      though no problems with the earlier version have been seen on Plone 4.
+      [maurits]
+
+1.6.1 (unreleased)
+------------------
+
+   - Nothing changed yet.
+ 
+1.6.0 (2010-07-05)
+------------------
+
+   - Nothing changed yet.
+ 
+1.6.0.a3 (2010-04-27)
+---------------------
+
+    - nothing changed.
+
+1.6.0a2 (09-03-2010)
+--------------------
+    
+    - add SetActionServerTimeout client action.
+      [gotcha, jfroche]
+
+1.6.0a1 (19-11-2009)
+--------------------
+    - fix RequestManager's handling of the sendingTimeout parameter,
+      to enable setting the timeout globally from custom code, if needed.
+      [ree]
+
+    - Added blur action (which, as it doesn't need a parameter, requires the 
+      deactivation of the args.length check in selectorreg.js.)
+      [simon]
+
+    - Fix or improve calculateAbsoluteURL to handle absolute
+      and relative urls correctly, as well as get rid of the
+      double slash (//) issue.
+      It also satisfies the tests kss_url_param and 
+      kss_url_param_multiprop, that now work as intended,
+      with previous workaround removed.
+      [ree]
+
+    - Replaced license header of third-party sarissa.js
+      to workaround the license detection of ohloh.
+      sarissa.js is redistributed under GNU GPL v2
+      as previously.
+      [ree]
+
+    - Fix cssQuery-compat.js to use newest base2 api.
+      [ree]
+
+    - Fix a typo that caused an exception instead of
+      logging an error message, this happened when
+      an action was regitered twice with the same name.
+      [ree]
+
+1.4 (2008-04-21)
+----------------
+
+    - Updated base2-dom-fp.js with newest version.
+      [ree]
+
+    - fix setKssAttribute action and command
+      (closes bug 8048 from plone.org)
+      [gotcha]
+
+    - fix action-cancel
+      [gotcha]
+
+    - disabled input values should not be submitted with the form
+      [gotcha]
+
+    - Updated base2-dom-fp.js with newest version.
+      This fixes breakage on FireFox 3.
+      [ree]
+
+    - refactor the value provider registry to use
+      a single registry in place of 3.
+      This will enable to define value
+      providers that recieve non-string parameters
+      like a node selection.
+      [ree]
+
+    - Remove previously deprecated form() and
+      currentForm() value providers from normal
+      action parameters (remark: they should
+      be used with kssSelector.)
+      They now give a parsing error.
+      [ree]
+
+    - Implement multiproperties in
+      action-client and action-server
+      [ree]
+
+    - add url() and alias() providers
+      [ree]
+
+    - Use functions in token table instead of code strings
+      that were evaluated. 'eval' is very slow.
+      [gotcha]
+
+    - Refactor code towards module and class closures.
+      [gotcha]
+
+    - Fix multiple selection form fields marshalling on Safari 
+      (fixes #22 in kssproject) and on IE.
+      
+    - Fix multiple selection form fields
+      marshalling on Safari 
+      (fixes #22 in kssproject)
+      and on IE.
+      [ree]
+
+    - Fix error fallback handling
+      [ree]
+
+    - Implement loglevels based on cookies
+      Add cookie handling code to kss.dom
+      Change logging on FireBug to avoid line info in debug
+      level messages
+      [ree]
+
+    - Implement event binding based on the ids fetched 
+      dynamically from the dom, by value providers.
+      [ree]
+
+    - Store some data on HTML nodes for FireKiss
+      [gotcha]
+
+    - Enhance javascript exception, they now properly show
+      the place where the exception generated, and also the
+      annotated error reasons of kss.
+      [jvloothuis, ree]
+
+    - Allow multiple selectors separated with commas for a single
+      set of property in a rule
+      [gotcha, laz, jfroche]
+
+    - Changed kukit payload to encode HTML content of CDATA.
+      This was necessary because us a supposed bug in FF, that
+      prevented us to use base2 (xpath selection did not work
+      on inserted elements, due to namespace issues.)
+      Get rid of forceToDom, make sure all plugins accept html
+      parameters as strings.
+      [ree, jvloothuis]
+
+1.2 (2007-08-17)
+----------------
+
+    - Move ;;; markers to first columns.
+      [gotcha]
+
+    - Fix credits.
+      [gotcha]
+
+    - Fix identifiers to have coherent styling (CamelCase).
+      [gotcha]
+
+    - Some refactoring to allow Firekiss plugin.
+      [gotcha]
+
+    - Fit code on 80 columns.
+      [gotcha]
+
+    - Cleaned up error messages.
+      [gotcha]

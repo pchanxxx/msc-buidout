@@ -1,0 +1,12 @@
+setuptools
+zope.component
+zope.interface
+zope.site
+zope.testing
+Acquisition
+Products.CMFCalendar
+Products.CMFCore
+Products.CMFDefault
+Products.GenericSetup
+ZODB3
+Zope2

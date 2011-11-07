@@ -1,0 +1,11 @@
+setuptools
+five.formlib
+zope.component
+zope.formlib
+zope.interface
+zope.schema
+
+[test]
+zope.app.form
+zope.publisher
+zope.testing

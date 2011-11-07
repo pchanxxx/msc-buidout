@@ -1,0 +1,62 @@
+Metadata-Version: 1.0
+Name: zope.app.folder
+Version: 3.5.2
+Summary: Folder Content Type for Zope 3
+Home-page: http://pypi.python.org/pypi/zope.app.folder
+Author: Zope Foundation and Contributors
+Author-email: zope-dev@zope.org
+License: ZPL 2.1
+Description: This packages provides the standard Folder content type for Zope 3. It also
+        implements the root folder of a Zope application. Folders can also be
+        converted to sites, which allow one to register components locally.
+        
+        
+        =======
+        CHANGES
+        =======
+        
+        3.5.2 (2010-12-28)
+        ------------------
+        
+        - Removed testing.py. There are no functional tests and ftesting.zcml now.
+        
+        - Removed unneeded dependencies.
+        
+        
+        3.5.1 (2009-02-14)
+        ------------------
+        
+        - Added missing dependency to zope.app.content.
+        
+        - Fixed e-mail address and homepage.
+        
+        - Fixed buildout.cfg, as there is no test extra.
+        
+        
+        3.5.0 (2009-01-31)
+        ------------------
+        
+        - Everything except zope.app.folder.browser moved to zope.site
+        and zope.container.
+        
+        - Import IPossibleSite from zope.location.interfaces
+        instead of deprecated place in zope.app.component.interfaces.
+        
+        - Use zope.container instead of zope.app.container.
+        
+        3.4.0 (2007-10-24)
+        ------------------
+        
+        - Initial release independent of the main Zope tree.
+        
+Keywords: zope3 folder site local component
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Framework :: Zope3

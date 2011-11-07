@@ -1,0 +1,248 @@
+Metadata-Version: 1.0
+Name: zopeskel.dexterity
+Version: 1.4
+Summary: Paster templates for dexterity
+Home-page: http://svn.plone.org/svn/collective/zopeskel.dexterity
+Author: ZopeSkel Development Team
+Author-email: zopeskel@lists.plone.org
+License: GPL 2
+Description: Introduction
+        ============
+        
+        Dexterity is a content-type development tool for Plone. It supports
+        Through-The-Web and filesystem development of new content types for Plone.
+        
+        zopeskel.dexterity provides a mechanism to quickly create Dexterity add on
+        skeletons. It also makes it easy to add new content types to an existing
+        skeleton. New content types built with this tool will support round-trip
+        elaboration with Dexterity's TTW schema editor.
+        
+        This is a development tool. You should be familiar with Plone and buildout to
+        use it. You should have already installed Dexterity in your Plone development
+        instance and be ready to start learning to use it.
+        
+        Installation
+        ============
+        
+        Add these lines into buildout::
+        
+        [buildout]
+        parts =
+        zopeskel
+        
+        [zopeskel]
+        recipe = zc.recipe.egg
+        eggs =
+        ZopeSkel
+        Paste
+        PasteDeploy
+        PasteScript
+        zopeskel.dexterity
+        ${buildout:eggs}
+        
+        And run the buildout
+        
+        Usage
+        ======
+        
+        Creating a dexterity content package, typically done in your buildout's src
+        directory::
+        
+        ../bin/zopeskel dexterity
+        
+        Adding a content-type skeleton to an existing package::
+        
+        cd yourbuildout/src/your-product
+        ../../bin/paster addcontent dexterity_content
+        
+        Adding a behavior skeleton::
+        
+        cd yourbuildout/src/your-product
+        ../../bin/paster addcontent dexterity_behavior
+        
+        Notes
+        =====
+        
+        Egg Directories
+        ---------------
+        
+        In order to support local commands, ZopeSkel/Paster will create Paste,
+        PasteDeploy and PasteScript eggs inside your product. These are only needed
+        for development. You can and should remove them from your add-on distribution.
+        
+        Errors
+        ------
+        
+        If you hit and error like this::
+        
+        pkg_resources.DistributionNotFound: plone.app.relationfield: Not Found for: my.product (did you run python setup.py develop?)
+        
+        when attempting to run `paster addcontent`, then you need to ensure that
+        Paster knows about all the relevant eggs from your buildout.
+        
+        Add `${instance:eggs}` to your `paster` section in your buildout, thusly::
+        
+        [zopeskel]
+        recipe = zc.recipe.egg
+        eggs =
+        ...
+        ${instance:eggs}
+        entry-points = paster=paste.script.command:run
+        
+        where `instance` is the name of your ``plone.recipe.zope2instance`` section.
+        Re-run the buildout and the issue should be resolved.
+        
+        Changelog
+        =========
+        
+        1.4 ~ 2011-10-29
+        ----------------
+        
+        - Minor revisions to bring into closer accord with PP4 and current
+        Dexterity Developers' Manual.
+        [smcmahon]
+        
+        - Add blob support
+        [smcmahon]
+        
+        1.3 ~ 2011-05-22
+        ----------------
+        
+        - Added README.txt to static folder in dexterity template.
+        [smcmahon]
+        
+        
+        - Changed metadata.xml template to start with an integer of 1 rather than
+        the package version number.
+        [davidjb]
+        
+        
+        1.3b3 ~ 2011-05-13
+        ------------------
+        
+        - Add a working sample integration doctest.
+        [smcmahon]
+        
+        1.3b2 ~ 2011-05-13
+        ------------------
+        
+        - Restore dotted filenames for new content types. Content types in file
+        system addons need to be robustly installable in systems that may already
+        have simple add-on names.
+        [smcmahon]
+        
+        1.3b1 ~ 2011-05-07
+        ------------------
+        
+        - Removed content field and view local command templates. My rationale for
+        removing the field template is that most novice developers should be using
+        TTW models and taking advantage of supermodel round-tripping. Those who are
+        comfortable with schema fields are probably not likely to be using a tool
+        like ZopeSkel to add them. The rationale for removing the view template is
+        simpler: it's main functionality is now in the content-type template.
+        [smcmahon]
+        
+        - Add sample view definition with addition of a content type.
+        [smcmahon]
+        
+        - Revise to use filenames that will match those created by dexterity's export
+        buttons. This means removing the dotted filename style.
+        [smcmahon]
+        
+        - Revise to use grok-style directory structures that will more closely
+        correspond with the dexterity docs.
+        [smcmahon]
+        
+        1.2.2 ~ 2011-04-18
+        -------------------
+        
+        - Fixed issues when locales folder was lost in the packaging and thus was not
+        able to start Plone 4.1 with the generated product present. Packaging
+        probably prunes empty folders, included a dummy README.txt file there.
+        [mikko ohtamaa]
+        
+        1.2.1 ~ 2011-04-08
+        ------------------
+        
+        - Release 1.2 of zopeskel.dexterity is not installable with python2.4
+        due to a bug in the tarfile module.  Added setup.cfg that forces
+        using the --formats=zip option when creating an sdist; this solves
+        the problem on python2.4.
+        [maurits]
+        
+        
+        1.2 ~ 2011-01-13
+        ----------------
+        
+        - dexterity_behavior_field localcommand now also adds the relevant
+        setter/getter/deleter in the adapter.
+        [kagesenshi]
+        
+        1.2.1 ~ unreleased
+        ------------------
+        
+        - Release 1.2 of zopeskel.dexterity is not installable with python2.4
+        due to a bug in the tarfile module.  Added setup.cfg that forces
+        using the --formats=zip option when creating an sdist; this solves
+        the problem on python2.4.
+        [maurits]
+        
+        
+        1.2 ~ 2011-01-13
+        ----------------
+        
+        - dexterity_behavior_field localcommand now also adds the relevant
+        setter/getter/deleter in the adapter.
+        [kagesenshi]
+        
+        
+        1.1b2 ~ 2010-11-23
+        ------------------
+        
+        * Fixed indentation in the module generated by dexterity_behavior local
+        command. It was using 3 spaces instead of 4 spaces.
+        [esartor]
+        
+        * Added import for the i18n message factory to the dexterity_behavior local
+        command.
+        [esartor]
+        
+        
+        1.1b1 ~ 2010-06-21
+        ------------------
+        
+        * Correcting date type fields to use schema.Date rather than schema.Datetime.
+        Using Datetime caused an incorrect widget being used, leading to
+        issues in KSS validation and not being able to save content.
+        [davidjb]
+        
+        * Updating collective.z3cform.datetimewidget widgets locations.  The old
+        locations are now deprecated.
+        [davidjb]
+        
+        * Wrapped Dexterity content title/description fields in MessageFactory call
+        [davidjb]
+        
+        * Added note about Paster and potentially missing eggs to readme
+        [davidjb]
+        
+        1.1a1
+        -----
+        
+        * added ability to add fields to the content type and behavior schema
+        [vangheem]
+        
+        * moved to zopeskel.dexterity package from collective.dexteritypaste
+        [vangheem]
+        
+        1.0a1dev
+        --------
+        
+        - Initial release
+        
+Keywords: plone dexterity
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

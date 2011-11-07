@@ -1,0 +1,34 @@
+setuptools
+five.formlib
+kss.core
+plone.contentrules
+plone.memoize
+plone.stringinterp
+plone.uuid
+plone.app.form
+plone.app.kss
+plone.app.vocabularies
+transaction
+zope.annotation
+zope.browser
+zope.component
+zope.container
+zope.event
+zope.formlib
+zope.i18nmessageid
+zope.interface
+zope.lifecycleevent
+zope.publisher >= 3.11.0
+zope.schema
+zope.site
+zope.traversing
+Acquisition
+Products.CMFPlone
+Products.Archetypes
+Products.ATContentTypes
+Products.CMFCore
+Products.CMFDefault
+Products.GenericSetup
+Products.statusmessages
+ZODB3
+Zope2 >= 2.12.3

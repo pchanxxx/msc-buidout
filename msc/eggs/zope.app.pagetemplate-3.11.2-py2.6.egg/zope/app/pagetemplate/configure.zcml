@@ -1,0 +1,54 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <include package="zope.browserpage" />
+
+  <adapter
+      for="*"
+      provides="zope.traversing.interfaces.IPathAdapter"
+      factory=".talesapi.ZopeTalesAPI"
+      name="zope"
+      />
+
+  <class class=".talesapi.ZopeTalesAPI">
+    <allow interface="zope.tales.interfaces.ITALESFunctionNamespace"/>
+    <allow attributes="title description created modified name title_or_name size"/>
+  </class>
+
+  <adapter
+      for="*"
+      provides="zope.traversing.interfaces.IPathAdapter"
+      factory=".urlquote.URLQuote"
+      name="url"/>
+
+  <class class=".urlquote.URLQuote">
+    <allow attributes="quote quote_plus unquote unquote_plus"/>
+  </class>
+
+ <class class="zope.tales.tales.Iterator">
+    <allow interface="zope.tales.interfaces.ITALESIterator" />
+ </class>
+
+ <class class="zope.pagetemplate.engine.ZopePathExpr">
+    <allow attributes="__call__" />
+ </class>
+ <class class="zope.pagetemplate.engine.TrustedZopePathExpr">
+    <allow attributes="__call__" />
+ </class>
+ <class class="zope.pagetemplate.engine.ZopePythonExpr">
+    <allow attributes="__call__" />
+ </class>
+ <class class="zope.pagetemplate.engine.PythonExpr">
+    <allow attributes="__call__" />
+ </class>
+
+ <class class="zope.tales.expressions.StringExpr">
+    <allow attributes="__call__" />
+ </class>
+ <class class="zope.tales.expressions.NotExpr">
+    <allow attributes="__call__" />
+ </class>
+ <class class="zope.tales.expressions.DeferExpr">
+    <allow attributes="__call__" />
+ </class>
+
+</configure>

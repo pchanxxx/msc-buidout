@@ -1,0 +1,57 @@
+Batching
+--------
+
+The BatchNavigation adapter is used for rendering batch navigation in CRUD
+forms.
+
+  >>> from z3c.batching.batch import Batch
+  >>> from plone.z3cform.crud.crud import BatchNavigation
+
+Here's a little batch, set to three items per page and starting at the
+third item:
+
+  >>> l = [10, 11, 12, 20, 21, 22, 30, 31, 32, 40, 41, 42, 50, 51, 52]
+  >>> batch = Batch(l, start=3, size=3)
+  >>> list(batch)
+  [20, 21, 22]
+
+We can create the BatchNavigation now.  We set the make_link attribute
+to be a function that takes an argument (the page number) and returns
+a link to it:
+
+  >>> def make_link(page):
+  ...     return u"linkto?page=%s" % page
+
+  >>> from z3c.form.testing import TestRequest
+  >>> view = BatchNavigation(batch, TestRequest())
+  >>> view.make_link = make_link
+
+We monkey-patch the template to see what's being passed:
+
+  >>> from pprint import pprint
+  >>> def template(self, **kwargs):
+  ...     print "Batch", kwargs['batch']
+  ...     print "Links", [p['link'] for p in kwargs['pages']]
+  ...     print "Labels", [p['label'] for p in kwargs['pages']]
+  >>> BatchNavigation.template = template
+  >>> view()
+  Batch <Batch start=3, size=3>
+  Links [u'linkto?page=0', u'linkto?page=0', None, u'linkto?page=2', u'linkto?page=3', u'linkto?page=4', u'linkto?page=2']
+  Labels [u'Previous', u'1', u'2', u'3', u'4', u'5', u'Next']
+
+Rendering for the first and last page, we can see that "Previous" and
+"Next" links are ommitted accordingly:
+
+  >>> batch = Batch(l, start=0, size=3)
+  >>> view.context = batch
+  >>> view()
+  Batch <Batch start=0, size=3>
+  Links [None, u'linkto?page=1', u'linkto?page=2', u'linkto?page=3', u'linkto?page=4', u'linkto?page=1']
+  Labels [u'1', u'2', u'3', u'4', u'5', u'Next']
+
+  >>> batch = Batch(l, start=12, size=3)
+  >>> view.context = batch
+  >>> view()
+  Batch <Batch start=12, size=3>
+  Links [u'linkto?page=3', u'linkto?page=0', u'linkto?page=1', u'linkto?page=2', u'linkto?page=3', None]
+  Labels [u'Previous', u'1', u'2', u'3', u'4', u'5']

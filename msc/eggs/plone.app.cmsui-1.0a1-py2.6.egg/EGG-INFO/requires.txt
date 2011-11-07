@@ -1,0 +1,8 @@
+setuptools
+plone.app.registry
+Products.CMFPlone
+plone.namedfile[blobs]
+plone.formwidget.namedfile
+
+[test]
+plone.app.testing

@@ -1,0 +1,122 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="zope"
+    >
+
+  <!-- content classes -->
+
+  <!-- TODO: to decide later if BlobFiles and BlobImages shall appear 
+             in the add menu or not  
+  -->
+
+  <class class=".file.File">
+
+    <require
+        permission="zope.View"
+        attributes="contentType data getSize openDetached"
+        />
+
+    <require
+        permission="zope.ManageContent"
+        attributes="open"
+        set_attributes="contentType data"
+        />
+
+    <implements
+       interface="zope.annotation.interfaces.IAttributeAnnotatable"
+       />
+  </class>
+
+  <class class=".image.Image">
+
+    <require
+        permission="zope.View"
+        attributes="contentType data getSize getImageSize openDetached"
+        />
+
+    <require
+        permission="zope.ManageContent"
+        set_attributes="contentType data"
+        attributes="open"
+        />
+
+    <implements
+        interface="zope.annotation.interfaces.IAttributeAnnotatable"
+        />
+  </class>
+  
+  <!-- TODO: Improve schema manager
+  
+  <utility
+      component=".generations.BlobFileSchemaManager"
+      name="z3c.blobfile"
+      />
+
+  -->
+
+  <!-- `IStorage` utilities should be named with the dotted name
+       referencing the implementation. 
+  -->
+
+  <utility
+      name="__builtin__.str"
+      provides=".interfaces.IStorage"
+      factory=".storages.StringStorable"
+      />
+
+  <utility
+      name="__builtin__.unicode"
+      provides=".interfaces.IStorage"
+      factory=".storages.UnicodeStorable"
+      />
+
+  <utility
+      name="zope.app.file.file.FileChunk"
+      provides=".interfaces.IStorage"
+      factory=".storages.FileChunkStorable"
+      />
+
+  <utility
+      name="__builtin__.file"
+      provides=".interfaces.IStorage"
+      factory=".storages.FileDescriptorStorable"
+      />
+
+  <utility
+      name="zope.publisher.browser.FileUpload"
+      provides=".interfaces.IStorage"
+      factory=".storages.FileUploadStorable"
+      />
+
+  <adapter
+      for=".interfaces.IBlobImage"
+      provides="zope.size.interfaces.ISized"
+      factory=".image.ImageSized"
+      />
+
+  <adapter 
+      for=".interfaces.IBlobFile"
+      provides="zope.filerepresentation.interfaces.IReadFile"
+      factory=".file.FileReadFile"
+      permission="zope.View"
+      />
+
+  <adapter 
+      for=".interfaces.IBlobFile"
+      provides="zope.filerepresentation.interfaces.IWriteFile"
+      factory=".file.FileWriteFile"
+      permission="zope.ManageContent"
+      />
+
+  <adapter factory=".copy.BlobFileCopyHook" />
+
+  <!-- TODO: have a look later
+  <adapter
+      for="zope.site.interfaces.IFolder"
+      provides="zope.filerepresentation.interfaces.IFileFactory"
+      factory=".image.FileFactory"
+      permission="zope.ManageContent"
+      />
+  -->
+
+</configure>

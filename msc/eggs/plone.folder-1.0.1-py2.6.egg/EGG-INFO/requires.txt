@@ -1,0 +1,6 @@
+setuptools
+plone.memoize
+
+[test]
+profilehooks
+Products.CMFCore

@@ -1,0 +1,10 @@
+
+
+[test_zope3]
+zope.app.twisted
+
+[test_zope2]
+Zope2
+
+[test_zconfig]
+ZConfig

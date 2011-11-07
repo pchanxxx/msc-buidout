@@ -1,0 +1,23 @@
+setuptools
+zope.site
+zope.app.container
+zope.app.pagetemplate
+zope.component [hook,zcml] >= 3.8
+zope.deprecation
+zope.exceptions
+zope.formlib
+zope.i18nmessageid
+zope.interface
+zope.publisher>=3.12.0
+zope.schema
+zope.security
+zope.traversing
+zope.componentvocabulary
+
+[test]
+zope.app.testing
+zope.app.zcmlfiles
+zope.login
+zope.password
+zope.securitypolicy
+zope.testbrowser

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<object name="portal_actions" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+    <object name="object" meta_type="CMF Action Category">
+        <object name="folderContents" i18n:domain="plone">
+            <property name="visible">False</property>
+        </object>
+        <object name="local_roles" i18n:domain="plone">
+            <property name="visible">False</property>
+        </object>
+    </object>
+
+    <object name="user" meta_type="CMF Action Category">
+        <object name="plone_setup" i18n:domain="plone">
+            <property name="visible">False</property>
+        </object>
+    </object>
+
+    <object name="object_buttons" meta_type="CMF Action Category">
+        <object name="paste" i18n:domain="plone" remove="true">
+            <property name="available_expr">python:object.cb_dataValid() and object.isPrincipiaFolderish</property>
+        </object>
+        <object name="cut" i18n:domain="plone">
+            <property name="available_expr">python:checkPermission("Delete objects", globals_view.getParentObject()) and checkPermission("Copy or Move", object) and context.portal_type != 'Plone Site'</property>
+        </object>
+        <object name="copy" i18n:domain="plone">
+            <property name="available_expr">python:checkPermission("Copy or Move", object) and context.portal_type != 'Plone Site'</property>
+        </object>
+        <object name="delete" i18n:domain="plone">
+            <property name="available_expr">python:checkPermission("Delete objects", globals_view.getParentObject()) and context.portal_type != 'Plone Site'</property>
+        </object>
+    </object>
+
+</object>

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: zope.hookable
+Version: 3.4.1
+Summary: Zope hookable
+Home-page: http://svn.zope.org/zope.hookable
+Author: Zope Corporation and Contributors
+Author-email: zope3-dev@zope.org
+License: ZPL 2.1
+Description: Hookable object support.
+Platform: UNKNOWN

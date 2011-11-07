@@ -1,0 +1,2240 @@
+------
+2011-10-27T14:05:05 INFO ZServer HTTP server started at Thu Oct 27 14:05:05 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-27T14:05:05 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-27T14:05:07 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-27T14:05:08 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-27T14:05:08 INFO ZODB.blob (36969) Blob directory `/Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage` is unused and has no layout marker set. Selected `bushy` layout. 
+------
+2011-10-27T14:05:08 INFO ZODB.blob (36969) Blob temporary directory '/Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/tmp' does not exist. Created new directory.
+------
+2011-10-27T14:05:08 WARNING ZODB.blob (36969) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-27T14:11:14 INFO ZServer HTTP server started at Thu Oct 27 14:11:14 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-27T14:11:14 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-27T14:11:16 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-27T14:11:17 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-27T14:11:17 WARNING ZODB.blob (37026) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-27T14:18:37 INFO ZServer HTTP server started at Thu Oct 27 14:18:37 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-27T14:18:37 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-27T14:18:39 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-27T14:18:39 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-27T14:18:39 WARNING ZODB.blob (37062) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-27T14:18:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-27T14:18:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-27T14:18:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-27T14:18:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-27T14:18:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-27T14:18:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-27T14:18:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-27T14:18:45 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-27T14:18:45 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-27T14:18:45 INFO Zope Ready to handle requests
+------
+2011-10-27T14:20:40 INFO GenericSetup.rolemap Role / permission map imported.
+------
+2011-10-27T14:20:40 INFO GenericSetup.skins Skins tool imported.
+------
+2011-10-27T14:20:40 INFO GenericSetup.archetypetool Archetype tool imported.
+------
+2011-10-27T14:20:40 INFO GenericSetup.resourceregistry Stylesheet registry imported.
+------
+2011-10-27T14:20:40 INFO GenericSetup.plone.app.viewletmanager Imported.
+------
+2011-10-27T14:20:40 INFO GenericSetup.resourceregistry Javascript registry imported.
+------
+2011-10-27T14:20:40 ERROR Zope.SiteErrorLog 1319718040.610.18155512724 http://localhost:8499/plonesite/prefs_install_products_form
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 583, in do_setLocal_tal
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 5, Column 0
+   - Expression: <PathExpr standard:u'language'>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x106380e68>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/prefs_install_products_form>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/prefs_install_products_form>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module zope.tales.expressions, line 217, in __call__
+  Module Products.PageTemplates.Expressions, line 147, in _eval
+  Module zope.tales.expressions, line 118, in _eval
+KeyError: 'language'
+------
+2011-10-27T14:21:04 ERROR root Exception while rendering an error message
+Traceback (most recent call last):
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/OFS/SimpleItem.py", line 241, in raise_standardErrorMessage
+    v = s(**kwargs)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFCore-2.2.4-py2.6.egg/Products/CMFCore/FSPythonScript.py", line 130, in __call__
+    return Script.__call__(self, *args, **kw)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 322, in __call__
+    return self._bindAndExec(args, kw, None)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 359, in _bindAndExec
+    return self._exec(bound_data, args, kw)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PythonScripts-2.13.0-py2.6.egg/Products/PythonScripts/PythonScript.py", line 344, in _exec
+    result = f(*args, **kw)
+  File "Script (Python)", line 34, in standard_error_message
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 322, in __call__
+    return self._bindAndExec(args, kw, None)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 359, in _bindAndExec
+    return self._exec(bound_data, args, kw)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFCore-2.2.4-py2.6.egg/Products/CMFCore/FSPageTemplate.py", line 240, in _exec
+    result = self.pt_render(extra_context=bound_names)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFCore-2.2.4-py2.6.egg/Products/CMFCore/FSPageTemplate.py", line 180, in pt_render
+    self, source, extra_context
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Products/PageTemplates/PageTemplate.py", line 79, in pt_render
+    showtal=showtal)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.pagetemplate-3.5.2-py2.6.egg/zope/pagetemplate/pagetemplate.py", line 113, in pt_render
+    strictinsert=0, sourceAnnotations=sourceAnnotations)()
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 271, in __call__
+    self.interpret(self.program)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 343, in interpret
+    handlers[opcode](self, args)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 888, in do_useMacro
+    self.interpret(macro)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 343, in interpret
+    handlers[opcode](self, args)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 533, in do_optTag_tal
+    self.do_optTag(stuff)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 518, in do_optTag
+    return self.no_tag(start, program)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 513, in no_tag
+    self.interpret(program)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 343, in interpret
+    handlers[opcode](self, args)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 583, in do_setLocal_tal
+    self.engine.setLocal(name, self.engine.evaluateValue(expr))
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tales-3.5.1-py2.6.egg/zope/tales/tales.py", line 696, in evaluate
+    return expression(self)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tales-3.5.1-py2.6.egg/zope/tales/expressions.py", line 217, in __call__
+    return self._eval(econtext)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Products/PageTemplates/Expressions.py", line 147, in _eval
+    ob = self._subexprs[-1](econtext)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tales-3.5.1-py2.6.egg/zope/tales/expressions.py", line 118, in _eval
+    ob = vars[base]
+KeyError: 'language'
+------
+2011-10-27T14:21:06 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-27T14:21:06 INFO Z2 Shutting down
+------
+2011-10-31T12:19:22 INFO ZServer HTTP server started at Mon Oct 31 12:19:22 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T12:19:22 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T12:19:24 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T12:19:25 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T12:19:25 WARNING ZODB.FileStorage Ignoring index for /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/filestorage/Data.fs
+------
+2011-10-31T12:19:25 WARNING ZODB.blob (853) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:19:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T12:19:28 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T12:19:28 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T12:19:28 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:19:28 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:19:28 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:19:28 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:19:31 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T12:19:31 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T12:19:31 INFO Zope Ready to handle requests
+------
+2011-10-31T12:23:17 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T12:23:17 INFO Z2 Shutting down
+------
+2011-10-31T12:26:14 INFO ZServer HTTP server started at Mon Oct 31 12:26:14 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T12:26:14 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T12:26:16 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T12:26:16 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T12:26:16 WARNING ZODB.FileStorage Ignoring index for /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/filestorage/Data.fs
+------
+2011-10-31T12:26:17 WARNING ZODB.blob (902) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:26:19 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T12:26:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T12:26:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T12:26:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:26:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:26:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:26:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:26:22 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T12:26:22 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T12:26:23 INFO Zope Ready to handle requests
+------
+2011-10-31T12:27:17 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T12:27:17 INFO Z2 Shutting down
+------
+2011-10-31T12:33:21 INFO ZServer HTTP server started at Mon Oct 31 12:33:21 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T12:33:21 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T12:33:23 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T12:33:24 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T12:33:24 WARNING ZODB.FileStorage Ignoring index for /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/filestorage/Data.fs
+------
+2011-10-31T12:33:24 WARNING ZODB.blob (951) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:25 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T12:33:26 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T12:33:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T12:33:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T12:33:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:33:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:33:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:33:27 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T12:33:29 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T12:33:29 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T12:33:30 INFO Zope Ready to handle requests
+------
+2011-10-31T12:35:22 INFO GenericSetup.rolemap Role / permission map imported.
+------
+2011-10-31T12:35:22 INFO GenericSetup.skins Skins tool imported.
+------
+2011-10-31T12:35:22 INFO GenericSetup.archetypetool Archetype tool imported.
+------
+2011-10-31T12:35:22 INFO GenericSetup.resourceregistry Stylesheet registry imported.
+------
+2011-10-31T12:35:22 INFO GenericSetup.plone.app.viewletmanager Imported.
+------
+2011-10-31T12:35:22 INFO GenericSetup.resourceregistry Javascript registry imported.
+------
+2011-10-31T12:35:22 ERROR Zope.SiteErrorLog 1320060922.690.620470006717 http://localhost:8499/plonesite/prefs_install_products_form
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 583, in do_setLocal_tal
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 5, Column 0
+   - Expression: <PathExpr standard:u'language'>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x106802aa0>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/prefs_install_products_form>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/prefs_install_products_form>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module zope.tales.expressions, line 217, in __call__
+  Module Products.PageTemplates.Expressions, line 147, in _eval
+  Module zope.tales.expressions, line 118, in _eval
+KeyError: 'language'
+------
+2011-10-31T12:36:10 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T12:36:10 INFO Z2 Shutting down
+------
+2011-10-31T13:34:27 INFO ZServer HTTP server started at Mon Oct 31 13:34:27 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T13:34:27 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T13:34:30 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T13:34:30 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T13:34:30 WARNING ZODB.FileStorage Ignoring index for /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/filestorage/Data.fs
+------
+2011-10-31T13:34:30 WARNING ZODB.blob (1248) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T13:34:32 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T13:34:33 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T13:34:33 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T13:34:33 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T13:34:33 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T13:34:33 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T13:34:33 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T13:34:36 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T13:34:36 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T13:34:36 INFO Zope Ready to handle requests
+------
+2011-10-31T13:35:10 INFO GenericSetup.rolemap Role / permission map imported.
+------
+2011-10-31T13:35:10 INFO GenericSetup.skins Skins tool imported.
+------
+2011-10-31T13:35:11 INFO GenericSetup.archetypetool Archetype tool imported.
+------
+2011-10-31T13:35:11 INFO GenericSetup.resourceregistry Stylesheet registry imported.
+------
+2011-10-31T13:35:11 INFO GenericSetup.plone.app.viewletmanager Imported.
+------
+2011-10-31T13:35:11 INFO GenericSetup.resourceregistry Javascript registry imported.
+------
+2011-10-31T13:35:11 ERROR Zope.SiteErrorLog 1320064511.260.645320485043 http://localhost:8499/plonesite/prefs_install_products_form
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 852, in do_condition
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 851, in do_condition
+  Module Products.PageTemplates.Expressions, line 205, in evaluateBoolean
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 63, Column 8
+   - Expression: <PythonExpr syntool.isSyndicationAllowed(here)>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x1068eb1b0>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/prefs_install_products_form>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/prefs_install_products_form>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module Products.PageTemplates.ZRPythonExpr, line 48, in __call__
+   - __traceback_info__: syntool.isSyndicationAllowed(here)
+  Module PythonExpr, line 1, in <expression>
+NameError: name 'syntool' is not defined
+------
+2011-10-31T13:45:47 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T13:45:47 INFO Z2 Shutting down
+------
+2011-10-31T14:08:58 INFO ZServer HTTP server started at Mon Oct 31 14:08:58 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T14:08:58 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T14:09:00 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T14:09:01 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T14:09:01 WARNING ZODB.FileStorage Ignoring index for /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/filestorage/Data.fs
+------
+2011-10-31T14:09:01 WARNING ZODB.blob (1388) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:02 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:09:03 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T14:09:04 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:09:04 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:09:04 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:09:04 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:09:04 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:09:04 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:09:06 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:09:06 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:09:07 INFO Zope Ready to handle requests
+------
+2011-10-31T14:09:42 INFO GenericSetup.rolemap Role / permission map imported.
+------
+2011-10-31T14:09:42 INFO GenericSetup.skins Skins tool imported.
+------
+2011-10-31T14:09:42 INFO GenericSetup.archetypetool Archetype tool imported.
+------
+2011-10-31T14:09:42 INFO GenericSetup.resourceregistry Stylesheet registry imported.
+------
+2011-10-31T14:09:42 INFO GenericSetup.plone.app.viewletmanager Imported.
+------
+2011-10-31T14:09:42 INFO GenericSetup.resourceregistry Javascript registry imported.
+------
+2011-10-31T14:09:42 ERROR Zope.SiteErrorLog 1320066582.770.403651520035 http://localhost:8499/plonesite/prefs_install_products_form
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+   - Warning: Macro expansion failed
+   - Warning: <class 'zope.pagetemplate.pagetemplate.PTRuntimeError'>: Page Template main_template has errors: ['Compilation failed', u'zope.tal.taldefs.METALError: ']
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 867, in do_useMacro
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFPlone-4.1.2-py2.6.egg/Products/CMFPlone/skins/plone_prefs/prefs_main_template.pt
+   - Line 2, Column 2
+   - Expression: <PathExpr standard:u'context/main_template/macros/master'>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x107f82db8>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/prefs_install_products_form>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/prefs_install_products_form>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module zope.tales.expressions, line 217, in __call__
+  Module Products.PageTemplates.Expressions, line 147, in _eval
+  Module zope.tales.expressions, line 124, in _eval
+  Module Products.PageTemplates.Expressions, line 74, in boboAwareZopeTraverse
+  Module OFS.Traversable, line 316, in restrictedTraverse
+  Module OFS.Traversable, line 249, in unrestrictedTraverse
+   - __traceback_info__: ([], 'macros')
+  Module Products.PageTemplates.PageTemplate, line 51, in macros
+  Module Products.CMFCore.FSPageTemplate, line 168, in pt_macros
+  Module Products.PageTemplates.PageTemplate, line 60, in pt_macros
+   - Warning: Compilation failed
+   - Warning: zope.tal.taldefs.METALError: 
+PTRuntimeError: Page Template main_template has errors: ['Compilation failed', u'zope.tal.taldefs.METALError: ']
+------
+2011-10-31T14:13:19 ERROR root Exception while rendering an error message
+Traceback (most recent call last):
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/OFS/SimpleItem.py", line 241, in raise_standardErrorMessage
+    v = s(**kwargs)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFCore-2.2.4-py2.6.egg/Products/CMFCore/FSPythonScript.py", line 130, in __call__
+    return Script.__call__(self, *args, **kw)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 322, in __call__
+    return self._bindAndExec(args, kw, None)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 359, in _bindAndExec
+    return self._exec(bound_data, args, kw)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PythonScripts-2.13.0-py2.6.egg/Products/PythonScripts/PythonScript.py", line 344, in _exec
+    result = f(*args, **kw)
+  File "Script (Python)", line 34, in standard_error_message
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 322, in __call__
+    return self._bindAndExec(args, kw, None)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Shared/DC/Scripts/Bindings.py", line 359, in _bindAndExec
+    return self._exec(bound_data, args, kw)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFCore-2.2.4-py2.6.egg/Products/CMFCore/FSPageTemplate.py", line 240, in _exec
+    result = self.pt_render(extra_context=bound_names)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFCore-2.2.4-py2.6.egg/Products/CMFCore/FSPageTemplate.py", line 180, in pt_render
+    self, source, extra_context
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Products/PageTemplates/PageTemplate.py", line 79, in pt_render
+    showtal=showtal)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.pagetemplate-3.5.2-py2.6.egg/zope/pagetemplate/pagetemplate.py", line 113, in pt_render
+    strictinsert=0, sourceAnnotations=sourceAnnotations)()
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 271, in __call__
+    self.interpret(self.program)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 343, in interpret
+    handlers[opcode](self, args)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tal-3.5.2-py2.6.egg/zope/tal/talinterpreter.py", line 867, in do_useMacro
+    macro = self.engine.evaluateMacro(macroExpr)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tales-3.5.1-py2.6.egg/zope/tales/tales.py", line 696, in evaluate
+    return expression(self)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tales-3.5.1-py2.6.egg/zope/tales/expressions.py", line 217, in __call__
+    return self._eval(econtext)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Products/PageTemplates/Expressions.py", line 147, in _eval
+    ob = self._subexprs[-1](econtext)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/zope.tales-3.5.1-py2.6.egg/zope/tales/expressions.py", line 124, in _eval
+    ob = self._traverser(ob, element, econtext)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Products/PageTemplates/Expressions.py", line 74, in boboAwareZopeTraverse
+    object = object.restrictedTraverse(name)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/OFS/Traversable.py", line 316, in restrictedTraverse
+    return self.unrestrictedTraverse(path, default, restricted=True)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/OFS/Traversable.py", line 249, in unrestrictedTraverse
+    if getattr(aq_base(obj), name, _marker) is not _marker:
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Products/PageTemplates/PageTemplate.py", line 51, in macros
+    return self.pt_macros()
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.CMFCore-2.2.4-py2.6.egg/Products/CMFCore/FSPageTemplate.py", line 168, in pt_macros
+    return FSPageTemplate.inheritedAttribute('pt_macros')(self)
+  File "/Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Zope2-2.13.10-py2.6.egg/Products/PageTemplates/PageTemplate.py", line 60, in pt_macros
+    self.id, self._v_errors
+PTRuntimeError: Page Template main_template has errors: ['Compilation failed', u'zope.tal.taldefs.METALError: ']
+------
+2011-10-31T14:48:00 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T14:48:00 INFO Z2 Shutting down
+------
+2011-10-31T14:48:12 INFO ZServer HTTP server started at Mon Oct 31 14:48:12 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T14:48:12 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T14:48:16 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T14:48:16 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T14:48:16 WARNING ZODB.blob (1534) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:48:19 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T14:48:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:48:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:48:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:48:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:48:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:48:20 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:48:22 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:48:22 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:48:23 INFO Zope Ready to handle requests
+------
+2011-10-31T14:48:34 ERROR Zope.SiteErrorLog 1320068914.320.787941312724 http://localhost:8499/plonesite/folder_listing
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 851, in do_condition
+  Module Products.PageTemplates.Expressions, line 205, in evaluateBoolean
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 60, Column 8
+   - Expression: <PythonExpr syntool.isSyndicationAllowed(here)>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x107330af8>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/folder_listing>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/folder_listing>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module Products.PageTemplates.ZRPythonExpr, line 48, in __call__
+   - __traceback_info__: syntool.isSyndicationAllowed(here)
+  Module PythonExpr, line 1, in <expression>
+NameError: name 'syntool' is not defined
+------
+2011-10-31T14:48:44 ERROR Zope.SiteErrorLog 1320068924.540.969940086938 http://localhost:8499/plonesite/folder_listing
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 851, in do_condition
+  Module Products.PageTemplates.Expressions, line 205, in evaluateBoolean
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 60, Column 8
+   - Expression: <PythonExpr syntool.isSyndicationAllowed(here)>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x107568100>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/folder_listing>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/folder_listing>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module Products.PageTemplates.ZRPythonExpr, line 48, in __call__
+   - __traceback_info__: syntool.isSyndicationAllowed(here)
+  Module PythonExpr, line 1, in <expression>
+NameError: name 'syntool' is not defined
+------
+2011-10-31T14:49:55 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T14:49:55 INFO Z2 Shutting down
+------
+2011-10-31T14:50:05 INFO ZServer HTTP server started at Mon Oct 31 14:50:05 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T14:50:05 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T14:50:07 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T14:50:07 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T14:50:08 WARNING ZODB.blob (1554) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:09 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:50:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T14:50:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:50:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:50:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:50:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:50:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:50:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:50:13 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:50:13 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:50:14 INFO Zope Ready to handle requests
+------
+2011-10-31T14:50:14 ERROR Zope.SiteErrorLog 1320069014.670.751170414977 http://localhost:8499/plonesite/folder_listing
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 405, in do_startTag
+  Module zope.tal.talinterpreter, line 482, in attrAction_tal
+  Module Products.PageTemplates.Expressions, line 225, in evaluateText
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 78, Column 5
+   - Expression: <PythonExpr test(isRTL, 'rtl', 'ltr')>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x1071eeaf8>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/folder_listing>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/folder_listing>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module Products.PageTemplates.ZRPythonExpr, line 48, in __call__
+   - __traceback_info__: test(isRTL, 'rtl', 'ltr')
+  Module PythonExpr, line 1, in <expression>
+NameError: name 'isRTL' is not defined
+------
+2011-10-31T14:50:58 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T14:50:58 INFO Z2 Shutting down
+------
+2011-10-31T14:51:07 INFO ZServer HTTP server started at Mon Oct 31 14:51:07 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T14:51:07 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T14:51:09 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T14:51:10 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T14:51:10 WARNING ZODB.blob (1569) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:51:12 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T14:51:13 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:51:13 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:51:13 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:51:13 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:51:13 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:51:13 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:51:15 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:51:15 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:51:16 INFO Zope Ready to handle requests
+------
+2011-10-31T14:51:17 ERROR Zope.SiteErrorLog 1320069077.220.555158423164 http://localhost:8499/plonesite/folder_listing
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 583, in do_setLocal_tal
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 122, Column 12
+   - Expression: <PythonExpr Iterator(mainSlot=False)>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x107316af8>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/folder_listing>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/folder_listing>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module Products.PageTemplates.ZRPythonExpr, line 48, in __call__
+   - __traceback_info__: Iterator(mainSlot=False)
+  Module PythonExpr, line 1, in <expression>
+NameError: name 'Iterator' is not defined
+------
+2011-10-31T14:57:30 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T14:57:30 INFO Z2 Shutting down
+------
+2011-10-31T14:57:39 INFO ZServer HTTP server started at Mon Oct 31 14:57:39 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T14:57:39 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T14:57:42 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T14:57:42 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T14:57:42 WARNING ZODB.blob (1610) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T14:57:45 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T14:57:46 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:57:46 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T14:57:46 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:57:46 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:57:46 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:57:46 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T14:57:48 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:57:48 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T14:57:49 INFO Zope Ready to handle requests
+------
+2011-10-31T15:07:31 INFO GenericSetup.rolemap Role / permission map imported.
+------
+2011-10-31T15:07:31 INFO GenericSetup.skins Skins tool imported.
+------
+2011-10-31T15:07:31 INFO GenericSetup.archetypetool Archetype tool imported.
+------
+2011-10-31T15:12:48 INFO GenericSetup.rolemap Role / permission map imported.
+------
+2011-10-31T15:12:48 INFO GenericSetup.skins Skins tool imported.
+------
+2011-10-31T15:12:48 INFO GenericSetup.archetypetool Archetype tool imported.
+------
+2011-10-31T15:12:48 INFO GenericSetup.resourceregistry Stylesheet registry imported.
+------
+2011-10-31T15:12:48 INFO GenericSetup.plone.app.viewletmanager Imported.
+------
+2011-10-31T15:12:48 INFO GenericSetup.resourceregistry Javascript registry imported.
+------
+2011-10-31T15:14:33 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T15:14:33 INFO Z2 Shutting down
+------
+2011-10-31T15:17:45 INFO ZServer HTTP server started at Mon Oct 31 15:17:45 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T15:17:45 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T15:17:47 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T15:17:47 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T15:17:48 WARNING ZODB.blob (1681) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T15:17:49 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:17:49 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:17:49 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:17:49 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:17:49 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:17:49 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:17:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T15:17:51 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T15:17:51 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T15:17:51 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:17:51 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:17:51 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:17:51 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:17:54 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T15:17:54 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T15:17:54 INFO Zope Ready to handle requests
+------
+2011-10-31T15:40:01 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T15:40:01 INFO Z2 Shutting down
+------
+2011-10-31T15:40:11 INFO ZServer HTTP server started at Mon Oct 31 15:40:11 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T15:40:11 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T15:40:14 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T15:40:14 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T15:40:14 WARNING ZODB.blob (1775) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:16 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:40:17 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T15:40:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T15:40:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T15:40:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:40:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:40:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:40:18 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:40:20 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T15:40:20 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T15:40:21 INFO Zope Ready to handle requests
+------
+2011-10-31T15:40:29 ERROR Zope.SiteErrorLog 1320072029.630.847017711266 http://localhost:8499/plonesite/folder_full_view
+Traceback (innermost last):
+  Module ZPublisher.Publish, line 126, in publish
+  Module ZPublisher.mapply, line 77, in mapply
+  Module Products.PDBDebugMode.runcall, line 70, in pdb_runcall
+  Module ZPublisher.Publish, line 46, in call_object
+  Module Shared.DC.Scripts.Bindings, line 322, in __call__
+  Module Shared.DC.Scripts.Bindings, line 359, in _bindAndExec
+  Module Products.CMFCore.FSPageTemplate, line 240, in _exec
+  Module Products.CMFCore.FSPageTemplate, line 180, in pt_render
+  Module Products.PageTemplates.PageTemplate, line 79, in pt_render
+  Module zope.pagetemplate.pagetemplate, line 113, in pt_render
+  Module zope.tal.talinterpreter, line 271, in __call__
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 888, in do_useMacro
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 533, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 518, in do_optTag
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 531, in do_optTag_tal
+  Module zope.tal.talinterpreter, line 513, in no_tag
+  Module zope.tal.talinterpreter, line 343, in interpret
+  Module zope.tal.talinterpreter, line 742, in do_insertStructure_tal
+  Module Products.PageTemplates.Expressions, line 218, in evaluateStructure
+  Module zope.tales.tales, line 696, in evaluate
+   - URL: file:/Users/anjaradtke/vw-devel/msc/buildout.blueprint/src/msc.sitetheme/msc/sitetheme/skins/msc_sitetheme_custom_templates/main_template.pt
+   - Line 88, Column 12
+   - Expression: <StringExpr u'plone.personal_bar'>
+   - Names:
+      {'container': <PloneSite at /plonesite>,
+       'context': <PloneSite at /plonesite>,
+       'default': <object object at 0x10043cb70>,
+       'here': <PloneSite at /plonesite>,
+       'loop': {},
+       'nothing': None,
+       'options': {'args': ()},
+       'repeat': <Products.PageTemplates.Expressions.SafeMapping object at 0x1070b37e0>,
+       'request': <HTTPRequest, URL=http://localhost:8499/plonesite/folder_full_view>,
+       'root': <Application at >,
+       'template': <FSPageTemplate at /plonesite/folder_full_view>,
+       'traverse_subpath': [],
+       'user': <PropertiedUser 'zope-admin'>}
+  Module zope.contentprovider.tales, line 66, in __call__
+ContentProviderLookupError: plone.personal_bar
+------
+2011-10-31T15:42:11 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T15:42:11 INFO Z2 Shutting down
+------
+2011-10-31T15:43:37 INFO ZServer HTTP server started at Mon Oct 31 15:43:37 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T15:43:37 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T15:43:39 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T15:43:39 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T15:43:40 WARNING ZODB.blob (1797) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:41 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T15:43:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T15:43:43 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T15:43:43 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T15:43:43 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:43:43 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:43:43 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:43:43 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T15:43:45 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T15:43:45 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T15:43:46 INFO Zope Ready to handle requests
+------
+2011-10-31T15:45:02 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T15:45:02 INFO Z2 Shutting down
+------
+2011-10-31T16:07:06 INFO ZServer HTTP server started at Mon Oct 31 16:07:06 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T16:07:06 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T16:07:08 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T16:07:08 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T16:07:08 WARNING ZODB.FileStorage Ignoring index for /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/filestorage/Data.fs
+------
+2011-10-31T16:07:08 WARNING ZODB.blob (1927) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:10 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:07:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T16:07:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T16:07:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T16:07:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:07:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:07:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:07:11 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:07:14 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T16:07:14 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T16:07:14 INFO Zope Ready to handle requests
+------
+2011-10-31T16:07:39 INFO GenericSetup.rolemap Role / permission map imported.
+------
+2011-10-31T16:07:39 INFO GenericSetup.skins Skins tool imported.
+------
+2011-10-31T16:07:39 INFO GenericSetup.archetypetool Archetype tool imported.
+------
+2011-10-31T16:07:39 INFO GenericSetup.resourceregistry Stylesheet registry imported.
+------
+2011-10-31T16:07:39 INFO GenericSetup.plone.app.viewletmanager Imported.
+------
+2011-10-31T16:07:39 INFO GenericSetup.resourceregistry Javascript registry imported.
+------
+2011-10-31T16:37:20 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T16:37:20 INFO Z2 Shutting down
+------
+2011-10-31T16:37:33 INFO ZServer HTTP server started at Mon Oct 31 16:37:33 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-10-31T16:37:33 INFO Zope Set effective user to "anjaradtke"
+------
+2011-10-31T16:37:37 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-10-31T16:37:37 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-10-31T16:37:38 WARNING ZODB.blob (2043) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:42 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-10-31T16:37:43 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-10-31T16:37:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T16:37:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-10-31T16:37:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:37:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:37:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:37:44 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-10-31T16:37:47 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T16:37:47 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-10-31T16:37:47 INFO Zope Ready to handle requests
+------
+2011-10-31T16:50:24 INFO SignalHandler Caught signal SIGINT
+------
+2011-10-31T16:50:24 INFO Z2 Shutting down
+------
+2011-11-03T10:31:19 INFO ZServer HTTP server started at Thu Nov  3 10:31:19 2011
+	Hostname: 0.0.0.0
+	Port: 8499
+------
+2011-11-03T10:31:19 INFO Zope Set effective user to "anjaradtke"
+------
+2011-11-03T10:31:34 INFO DocFinderTab Applied patch version 1.0.5.
+------
+2011-11-03T10:31:36 WARNING PrintingMailHost 
+
+******************************************************************************
+
+Monkey patching MailHosts to print emails to the terminal instead of
+sending them.
+
+NO MAIL WILL BE SENT FROM ZOPE AT ALL!
+
+Turn off debug mode or remove PrintingMailHost from the Products
+directory to turn this off.
+
+******************************************************************************
+
+------
+2011-11-03T10:31:38 WARNING ZODB.blob (399) Blob dir /Users/anjaradtke/vw-devel/msc/buildout.blueprint/var/blobstorage/ has insecure mode setting
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/de/LC_MESSAGES/plone.z3cform.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/en/LC_MESSAGES/plone.z3cform.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/fr/LC_MESSAGES/plone.z3cform.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/nl/LC_MESSAGES/plone.z3cform.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/no/LC_MESSAGES/plone.z3cform.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.z3cform-0.7.7-py2.6.egg/plone/z3cform/locales/pt_BR/LC_MESSAGES/plone.z3cform.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/af/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ca/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/cs/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/da/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/de/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/es/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/eu/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fi/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/fr/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/it/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/ja/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/nl/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/no/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/pt_BR/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/sv/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/uk/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_CN/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:50 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.discussion-2.0.10-py2.6.egg/plone/app/discussion/locales/zh_TW/LC_MESSAGES/plone.app.discussion.po
+------
+2011-11-03T10:31:52 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.app.locales-4.0.9-py2.6.egg/plone/app/locales/locales/eo/LC_MESSAGES/plone.po
+------
+2011-11-03T10:31:55 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/de/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-11-03T10:31:55 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/plone.formwidget.namedfile-1.0.1-py2.6.egg/plone/formwidget/namedfile/locales/es/LC_MESSAGES/plone.formwidget.namedfile.po
+------
+2011-11-03T10:31:56 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/cs/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-11-03T10:31:56 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/de/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-11-03T10:31:56 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/el/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-11-03T10:31:56 WARNING zope.i18n Error while compiling /Users/anjaradtke/vw-devel/msc/buildout.blueprint/eggs/Products.PlacelessTranslationService-2.0.2-py2.6.egg/Products/PlacelessTranslationService/locales/pt_BR/LC_MESSAGES/PlacelessTranslationService.po
+------
+2011-11-03T10:32:01 WARNING Init Class z3c.blobfile.file.File has a security declaration for nonexistent method 'contentType'
+------
+2011-11-03T10:32:01 WARNING Init Class z3c.blobfile.image.Image has a security declaration for nonexistent method 'contentType'
+------
+2011-11-03T10:32:05 INFO Zope Ready to handle requests
+------
+2011-11-03T13:48:13 INFO SignalHandler Caught signal SIGINT
+------
+2011-11-03T13:48:13 INFO Z2 Shutting down

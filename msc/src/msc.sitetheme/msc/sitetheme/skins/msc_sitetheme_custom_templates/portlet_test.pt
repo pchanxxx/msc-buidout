@@ -1,0 +1,26 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="plone">
+<body>
+<div metal:define-macro="portlet">
+
+<dl class="portlet rounded" id="portlet-test">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+            Testportlet
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+		Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
+		ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+		Nulla consequat massa quis enim.
+    </dd>
+
+</dl>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="zope"
+    >
+
+  <include package="zope.site" />
+  <include package="zope.container" />
+  <include package=".browser" />
+
+  <interface
+      interface="zope.site.interfaces.IFolder"
+      type="zope.app.content.interfaces.IContentType"
+      />
+
+</configure>

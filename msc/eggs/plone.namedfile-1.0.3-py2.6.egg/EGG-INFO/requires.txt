@@ -1,0 +1,18 @@
+setuptools
+zope.app.file
+plone.rfc822>=1.0b2
+
+[supermodel]
+plone.supermodel
+
+[scales]
+plone.scale[storage] >=1.1dev
+
+[blobs]
+z3c.blobfile
+
+[marshaler]
+
+
+[editor]
+plone.schemaeditor

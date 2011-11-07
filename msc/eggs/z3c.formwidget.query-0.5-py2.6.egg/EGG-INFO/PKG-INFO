@@ -1,0 +1,39 @@
+Metadata-Version: 1.0
+Name: z3c.formwidget.query
+Version: 0.5
+Summary: A source query widget for z3c.form.
+Home-page: http://svn.zope.org/z3c.formwidget
+Author: Zope Community
+Author-email: zope3-dev@zope.org
+License: ZPL 2.1
+Description: Overview
+        ========
+        
+        This package implements a widget that lets users enter a query and
+        select from the results.
+        
+        The widget works with ``zope.schema.Choice``-fields supplying a query
+        source [1], optionally in conjunction with a collection field which
+        then allows multiple selections.
+        
+        The easiest way to use the widget is to provide one of the following
+        as ``widgetFactory``:
+        
+        * z3c.formwidget.query.widget.QuerySourceFieldRadioWidget
+        * z3c.formwidget.query.widget.QuerySourceFieldCheckboxWidget
+        
+        ------
+        
+        [1] The source needs to implement ``IQuerySource`` as defined in this
+        package.
+        
+Keywords: zope zope3 z3c.form
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Zope3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

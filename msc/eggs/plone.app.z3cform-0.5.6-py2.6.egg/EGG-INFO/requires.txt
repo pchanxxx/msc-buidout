@@ -1,0 +1,12 @@
+Zope2
+zope.interface
+setuptools
+plone.z3cform>=0.5.11dev
+kss.core
+plone.app.kss
+z3c.formwidget.query
+zope.component
+collective.z3cform.datetimewidget>=0.1a2
+
+[tests]
+collective.testcaselayer

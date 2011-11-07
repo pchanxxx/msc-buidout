@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plone.app.folder">
+
+    <five:registerPackage package="." initialize=".initialize" />
+    <five:deprecatedManageAddDelete class=".folder.ATFolder" />
+
+    <include file="profiles.zcml" />
+    <include package="plone.folder" />
+
+    <adapter factory=".nextprevious.NextPrevious" />
+
+    <browser:page
+        for="*"
+        name="migrate-btrees"
+        class=".migration.BTreeMigrationView"
+        permission="cmf.ManagePortal"
+        />
+
+</configure>

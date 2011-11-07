@@ -1,0 +1,30 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  i18n_domain="zope"
+  >
+
+  <!-- Provide overrides of zope.app.file configurations -->
+
+  <class class=".file.File">
+
+    <factory
+        id="zope.app.content.File"
+        title="File"
+        description="A File"
+        />
+
+  </class>
+
+  <class class=".image.Image">
+
+    <factory
+        id="zope.app.content.Image"
+        title="Image"
+        description="An Image"
+        />
+
+  </class>
+
+  <include package=".browser" />
+
+</configure>

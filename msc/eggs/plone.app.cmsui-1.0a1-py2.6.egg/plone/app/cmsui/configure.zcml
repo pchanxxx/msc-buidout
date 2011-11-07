@@ -1,0 +1,207 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="plone">
+
+    <!-- Permissions -->
+
+    <permission
+        id="plone.ViewCMSUI"
+        title="Plone: View CMS UI"
+        />
+
+    <include package="plone.app.registry" />
+    <include package=".bbb" />
+
+    <gs:registerProfile
+        name="default"
+        title="CMS User Interface"
+        description="Installs a the Plone CMS User Interface"
+        directory="profiles/default"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+    
+    <!-- BBB profile -->
+    <gs:registerProfile
+        name="z_bbb"
+        title="CMS User Interface - BBB registrations"
+        description="Performs backwards compatibility migrations"
+        directory="bbb/profiles/bbb"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <!-- Views -->
+
+    <browser:page
+        name="cmsui-menu"
+        for="*"
+        class=".menu.Menu"
+        template="templates/menu.pt"
+        permission="plone.ViewCMSUI"
+	allowed_attributes="itemsInFolder"
+        />
+
+    <browser:page
+        name="cmsui-notifications"
+        for="*"
+        template="templates/notifications.pt"
+        permission="plone.ViewCMSUI"
+        />
+
+    <browser:page
+        name="cmsui-overlay-container"
+        for="*"
+        class=".overlaycontainer.OverlayContainer"
+        template="templates/overlay-container.pt"
+        permission="plone.ViewCMSUI"
+        />
+
+    <!-- History overlay -->
+    
+    <browser:page
+        name="cmsui-history-panel"
+        for="*"
+        class=".historypanel.HistoryPanel"
+        template="templates/history-panel.pt"
+        permission="plone.ViewCMSUI"
+        />
+
+    <!-- Workflow overlay -->
+    
+    <browser:page
+        name="cmsui-workflow-panel"
+        for="*"
+        class=".workflowpanel.WorkflowPanel"
+        template="templates/overlay-form.pt"
+        permission="plone.ViewCMSUI"
+        />
+
+    <!-- Display menu overlay -->
+
+    <browser:page
+        name="cmsui-display-options"
+        for="*"
+        class=".displayoptions.DisplayOptions"
+        template="templates/display-options.pt"
+        permission="plone.ViewCMSUI"
+        />
+
+    <!-- Folder contents overlay -->
+
+    <browser:page
+        name="cmsui-structure"
+        for="*"
+        class=".structure.StructureView"
+        template="templates/structure.pt"
+        permission="plone.ViewCMSUI"
+        />
+    <browser:page
+        name="folder_moveitem"
+        for="*"
+        class=".structure.MoveItem"
+        permission="plone.ViewCMSUI"
+        layer=".interfaces.ICMSUILayer"
+        />
+
+    <!-- Sharing overlay -->
+    <browser:page
+        name="cmsui-sharing"
+        for="*"
+        class=".sharing.SharingView"
+        template="templates/sharing.pt"
+        permission="plone.DelegateRoles"
+        />
+
+    <!-- "Add new" menu overlay -->
+
+    <browser:page
+        name="cmsui-add-content"
+        for="*"
+        class=".addmenu.AddMenu"
+        template="templates/add-menu.pt"
+        permission="plone.ViewCMSUI"
+        />
+
+    <browser:page
+        name="cmsui-add-content-form"
+        for="*"
+        class=".addmenu.AddNewContentForm"
+        permission="plone.ViewCMSUI"
+        />
+
+    <!-- Lock info overlay -->
+
+    <browser:page
+        name="cmsui-lock-info"
+        for="*"
+        class=".lockinfo.LockInfo"
+        template="templates/lockinfo.pt"
+        permission="plone.ViewCMSUI"
+        />
+
+    <!-- Static resources -->
+
+    <browser:resourceDirectory
+        name="plone.app.cmsui"
+        directory="resources"
+        />
+
+    <!-- Control panel -->
+
+    <browser:page
+        name="cmsui-controlpanel"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.CMSUIControlPanelView"
+        permission="cmf.ManagePortal"
+        />
+
+
+
+<!-- Stolen from collective.quickupload -->
+<!--
+    TODO Refactor
+-->
+<adapter factory=".uploadcapable.QuickUploadCapableFileFactory" />
+
+<class class="Products.ATContentTypes.content.folder.ATFolder">
+  <implements interface=".interfaces.IQuickUploadCapable" />
+</class>
+
+<class class="Products.ATContentTypes.content.folder.ATBTreeFolder">
+  <implements interface=".interfaces.IQuickUploadCapable" />
+</class>
+
+<class class="Products.CMFPlone.Portal.PloneSite">
+  <implements interface=".interfaces.IQuickUploadCapable" />
+</class>       
+      
+<!-- Quick Upload View -->
+     
+<browser:page
+    for=".interfaces.IQuickUploadCapable"
+    name="quick_upload"
+    class=".fileupload.QuickUploadView"
+    template="templates/file-upload.pt"
+    permission="cmf.AddPortalContent"/>     
+  
+<!-- Quick Upload javascript Init -->
+<browser:page
+    for="*"
+    name="quick_upload_init"
+    class=".fileupload.QuickUploadInit"
+    permission="cmf.AddPortalContent"/>      
+
+<browser:page
+    for="*"
+    name="quick_upload_file"
+    class=".fileupload.QuickUploadFile"
+    permission="cmf.AddPortalContent"/> 
+
+
+</configure>
